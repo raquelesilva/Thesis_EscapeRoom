@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: e0a7d5fe6d3497945b81db71124e1fd4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _merger: {instanceID: 0}
+  - notificationManager: {instanceID: 0}
+  - startsParent: {instanceID: 0}
+  - endsParent: {instanceID: 0}
+  - linePrefab: {fileID: 6976563348805236177, guid: 3ba573b0e235b4942b81afa5674b3d47, type: 3}
+  - canvas: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

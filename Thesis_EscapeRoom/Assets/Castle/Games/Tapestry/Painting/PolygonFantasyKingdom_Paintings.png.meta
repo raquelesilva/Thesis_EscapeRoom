@@ -1,0 +1,391 @@
+fileFormatVersion: 2
+guid: c14b12e8c64529543807c662bed59b3f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PolygonFantasyKingdom_Paintings_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2730.6665
+        width: 1024
+        height: 1365.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e339c5a77f994764e9b55502c5f36eb3
+      internalID: 2039252859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PolygonFantasyKingdom_Paintings_1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2730.6665
+        width: 1024
+        height: 1365.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffed34691b88def418baa6b24fc9e63a
+      internalID: 435930091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PolygonFantasyKingdom_Paintings_2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2730.6665
+        width: 1024
+        height: 1365.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86dd7a58bc58b9d499107532e550b51f
+      internalID: -768295688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PolygonFantasyKingdom_Paintings_3
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2730.6665
+        width: 1024
+        height: 1365.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76658fe1800643c449570d48ae52427e
+      internalID: 2108581453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PolygonFantasyKingdom_Paintings_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1366
+        width: 1024
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c06d1f77f11434eb9bd3f1401da9ae
+      internalID: -761272098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PolygonFantasyKingdom_Paintings_5
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1365.6666
+        width: 1024
+        height: 1365.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee84d989bcf00e4e8afef5d2e6f3563
+      internalID: -1818704533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PolygonFantasyKingdom_Paintings_6
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1365.6666
+        width: 1024
+        height: 1365.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1200e3a52404b344db23292abbde8e24
+      internalID: 1469718461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PolygonFantasyKingdom_Paintings_7
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1365.6666
+        width: 1024
+        height: 1365.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3a45b022b82344da846c01598e0fcc
+      internalID: -1145948377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PolygonFantasyKingdom_Paintings_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.666626
+        width: 1024
+        height: 1365.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6266f86be0bf79d43b68972c1bf2277c
+      internalID: 1777214598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PolygonFantasyKingdom_Paintings_9
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0.666626
+        width: 1024
+        height: 1365.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601f0b91d5ea0e9478a5dc2d4747e508
+      internalID: 387470148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PolygonFantasyKingdom_Paintings_10
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0.666626
+        width: 1024
+        height: 1365.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab68b1f7b67dd8149a422b835b32b321
+      internalID: 1812670921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PolygonFantasyKingdom_Paintings_11
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0.666626
+        width: 1024
+        height: 1365.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56436e5a673ddef49b60da6ce7c4e6c1
+      internalID: 202363860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9555e69009b2a3b40bfe03ed69eb3ae8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PolygonFantasyKingdom_Paintings_0: 2039252859
+      PolygonFantasyKingdom_Paintings_1: 435930091
+      PolygonFantasyKingdom_Paintings_10: 1812670921
+      PolygonFantasyKingdom_Paintings_11: 202363860
+      PolygonFantasyKingdom_Paintings_2: -768295688
+      PolygonFantasyKingdom_Paintings_3: 2108581453
+      PolygonFantasyKingdom_Paintings_4: -761272098
+      PolygonFantasyKingdom_Paintings_5: -1818704533
+      PolygonFantasyKingdom_Paintings_6: 1469718461
+      PolygonFantasyKingdom_Paintings_7: -1145948377
+      PolygonFantasyKingdom_Paintings_8: 1777214598
+      PolygonFantasyKingdom_Paintings_9: 387470148
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 56d7b245827a60c4689c9766437d4eb2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Dot: {fileID: 5589945843021910457, guid: a95ced0ec6302144cacd36dcdcf70e4e, type: 3}
+  - Dash: {fileID: 2770633634235420139, guid: d1747ef1b1c41104f95b5ec947193533, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
