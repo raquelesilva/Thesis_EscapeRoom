@@ -167,11 +167,12 @@ public class PickUpSystem : MonoBehaviour
         }
     }
     private void DetectPutDown()
-    {
+    {/*
         RaycastHit hit;
 
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, distanceToSeeRay, putDownLayerMask))
         {
+            
             if (hit.collider.GetComponent<PutDownObjects>() != null)
             {
                 var putDownObject = hit.collider.GetComponent<PutDownObjects>();
@@ -191,7 +192,7 @@ public class PickUpSystem : MonoBehaviour
                             Rigidbody heldRigidBody = heldObj.GetComponent<Rigidbody>();
                             heldObj.GetComponent<Interactable>().isGrabbed = false;
                             heldRigidBody.useGravity = true;
-                            heldRigidBody.drag = 1f * Time.deltaTime;
+                            heldRigidBody.linearDamping = 1f * Time.deltaTime;
                             heldObjectTag = "";
                             carrying = false;
                             heldObj = null;
@@ -229,6 +230,7 @@ public class PickUpSystem : MonoBehaviour
             currentObjectState = ObjectState.none;
 
         }
+        */
     }
 
     private void DetectInteractable()
@@ -333,7 +335,7 @@ public class PickUpSystem : MonoBehaviour
             interactable.isGrabbed = true;
 
             objRigidBody.useGravity = false;
-            objRigidBody.drag = heldObjDrag * Time.timeScale;
+            objRigidBody.linearDamping = heldObjDrag * Time.timeScale;
 
             // Set parent and reset local position and rotation
             objRigidBody.transform.SetParent(holdParent, true);
@@ -349,7 +351,7 @@ public class PickUpSystem : MonoBehaviour
         heldObj.GetComponent<Interactable>().onDrop.Invoke();
         heldObj.GetComponent<Interactable>().isGrabbed = false;
         heldRigidBody.useGravity = true;
-        heldRigidBody.drag = 1f; // Remove * Time.deltaTime
+        heldRigidBody.linearDamping = 1f; // Remove * Time.deltaTime
         heldObjectTag = "";
         carrying = false;
         heldObj.transform.parent = null;
@@ -371,7 +373,7 @@ public class PickUpSystem : MonoBehaviour
             interactable.onThrow.Invoke();
         }
         heldRigidbody.useGravity = true;
-        heldRigidbody.drag = 1f;
+        heldRigidbody.linearDamping = 1f;
         heldObj.transform.parent = null;
         heldObj = null;
         heldRigidbody.AddForce(holdParent.forward * throwForce);

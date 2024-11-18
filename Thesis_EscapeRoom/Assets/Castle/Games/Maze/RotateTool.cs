@@ -49,9 +49,6 @@ namespace CoreSystems.Tools
             if (xAxis != null) xAxis.SetActive(true);
             if (yAxis != null) yAxis.SetActive(true);
             if (zAxis != null) zAxis.SetActive(true);
-
-            if (ValveManager.instance != null)
-                ValveManager.instance.CheckValveRotations();
         }
     }
 }
