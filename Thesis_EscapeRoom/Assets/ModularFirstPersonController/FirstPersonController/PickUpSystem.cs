@@ -32,7 +32,7 @@ public class PickUpSystem : MonoBehaviour
     [SerializeField] private float distanceToSeeRay;
     public bool interacting;
 
-    private PromtManager promtManager;
+    //private PromtManager promtManager;
     private FirstPersonController player;
 
     private void Awake()
@@ -44,7 +44,7 @@ public class PickUpSystem : MonoBehaviour
     }
     private void Start()
     {
-        promtManager = PromtManager.instance;
+        //promtManager = PromtManager.instance;
         player = FirstPersonController.instance;
     }
 
@@ -60,12 +60,12 @@ public class PickUpSystem : MonoBehaviour
     [SerializeField] private ObjectState currentObjectState;
     void Update()
     {
-        if (player.currentPlayerState == PlayerStates.focused)
-        {
+        /*if (player.currentPlayerState == PlayerStates.focused)
+        {*/
             currentObjectState = ObjectState.none;
-            promtManager.TurnOffPromt();
+            //promtManager.TurnOffPromt();
             return;
-        }
+        //}
 
 
 
@@ -112,24 +112,24 @@ public class PickUpSystem : MonoBehaviour
 
         //Sistema de states de objectos
 
-        switch (currentObjectState)
-        {
-            case ObjectState.grabable:
-                promtManager.UpdateTooltip("Grab");
-                break;
-            case ObjectState.interactable:
-                promtManager.UpdateTooltip("Interact");
-                break;
-            case ObjectState.putDown:
-                promtManager.UpdateTooltip("PutDown");
-                break;
-            case ObjectState.both:
-                promtManager.UpdateTooltip("InteractAndGrab");
-                break;
-            case ObjectState.none:
-                promtManager.TurnOffPromt();
-                break;
-        }
+        //switch (currentObjectState)
+        //{
+        //    case ObjectState.grabable:
+        //        promtManager.UpdateTooltip("Grab");
+        //        break;
+        //    case ObjectState.interactable:
+        //        promtManager.UpdateTooltip("Interact");
+        //        break;
+        //    case ObjectState.putDown:
+        //        promtManager.UpdateTooltip("PutDown");
+        //        break;
+        //    case ObjectState.both:
+        //        promtManager.UpdateTooltip("InteractAndGrab");
+        //        break;
+        //    case ObjectState.none:
+        //        promtManager.TurnOffPromt();
+        //        break;
+        //}
     }
 
     public GameObject GetHeldObject()

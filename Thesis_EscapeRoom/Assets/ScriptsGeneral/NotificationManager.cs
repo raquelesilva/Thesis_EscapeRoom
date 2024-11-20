@@ -11,7 +11,7 @@ public class NotificationManager : MonoBehaviour
 
     [SerializeField] List<Messages> messages = new();
 
-    [SerializeField] QuestionToWrite questionToWrite;
+    //[SerializeField] QuestionToWrite questionToWrite;
 
     // ### A duração total da animação quando este abre/fecha
     [SerializeField] float duration = 1f;
@@ -50,7 +50,7 @@ public class NotificationManager : MonoBehaviour
         this.duration = duration;
         StopAllCoroutines();
         window.gameObject.SetActive(true);
-        questionToWrite.WriteQuestions(text);
+        //questionToWrite.WriteQuestions(text);
         //window.localScale = Vector3.zero;
 
         //message.color = messageColor;

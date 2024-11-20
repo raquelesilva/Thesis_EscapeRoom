@@ -26,7 +26,7 @@ public class AnimationManager : MonoBehaviour
         mainCamera.enabled = true;
         thisCamera.enabled = false;
 
-        player.currentPlayerState = PlayerStates.playing;
+        //player.currentPlayerState = PlayerStates.playing;
     }
 
     public void SwitchOffMainCamera()
@@ -44,7 +44,7 @@ public class AnimationManager : MonoBehaviour
         mainCamera.enabled = false;
         Debug.Log("Step 2");
 
-        player.currentPlayerState = PlayerStates.paused;
+        //player.currentPlayerState = PlayerStates.paused;
     }
 
     public void BackUIButtonOn()
