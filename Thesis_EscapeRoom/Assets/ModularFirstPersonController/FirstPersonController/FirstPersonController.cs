@@ -8,6 +8,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
+using UnityEditor.ShaderGraph;
+
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -17,6 +20,8 @@ using System.Net;
 public class FirstPersonController : MonoBehaviour
 {
     private Rigidbody rb;
+
+    public PlayerMovement playerMovement;
 
     #region Camera Movement Variables
 
@@ -61,6 +66,7 @@ public class FirstPersonController : MonoBehaviour
 
     // Internal Variables
     private bool isWalking = false;
+    private Vector2 move;
 
     #region Sprint
 
@@ -135,6 +141,8 @@ public class FirstPersonController : MonoBehaviour
 
     private void Awake()
     {
+        playerMovement = new PlayerMovement();
+
         instance = this;
 
         rb = GetComponent<Rigidbody>();
@@ -330,7 +338,7 @@ public class FirstPersonController : MonoBehaviour
         #region Jump
 
         // Gets input and calls jump method
-        if (enableJump && Input.GetKeyDown(jumpKey) && isGrounded)
+        if (enableJump && Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             Jump();
         }
@@ -377,9 +385,10 @@ public class FirstPersonController : MonoBehaviour
             // Calculate how fast we should be moving
             Vector3 targetVelocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
+
             // Checks if player is walking and isGrounded
             // Will allow head bob
-            if (targetVelocity.x != 0 || targetVelocity.z != 0 && isGrounded)
+            if (targetVelocity.x != 0 || targetVelocity.z != 0)
             {
                 isWalking = true;
             }
@@ -389,7 +398,7 @@ public class FirstPersonController : MonoBehaviour
             }
 
             // All movement calculations shile sprint is active
-            if (enableSprint && Input.GetKey(sprintKey) && sprintRemaining > 0f && !isSprintCooldown)
+            if (enableSprint && playerMovement.Movement.Sprint.IsPressed() && sprintRemaining > 0f && !isSprintCooldown)
             {
                 targetVelocity = transform.TransformDirection(targetVelocity) * sprintSpeed;
 
@@ -445,6 +454,15 @@ public class FirstPersonController : MonoBehaviour
         #endregion
     }
 
+    public void SetPause(bool isPaused)
+    {
+        cameraCanMove = !isPaused;
+        playerCanMove = !isPaused;
+        enableZoom = !isPaused;
+        isWalking = !isPaused;
+        enableJump = !isPaused;
+    }
+
     // Sets isGrounded based on a raycast sent straigth down from the player object
     private void CheckGround()
     {
@@ -469,6 +487,7 @@ public class FirstPersonController : MonoBehaviour
         // Adds force to the player rigidbody to jump
         if (isGrounded)
         {
+            Debug.Log("IsGrounded");
             rb.AddForce(0f, jumpPower, 0f, ForceMode.Impulse);
             isGrounded = false;
         }
