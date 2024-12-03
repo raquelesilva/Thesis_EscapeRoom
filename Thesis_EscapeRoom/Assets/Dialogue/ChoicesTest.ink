@@ -1,4 +1,4 @@
-﻿-> main
+-> main
 
 === main ===
 Hello hello!

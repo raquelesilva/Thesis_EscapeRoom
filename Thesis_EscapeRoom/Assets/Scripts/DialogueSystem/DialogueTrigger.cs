@@ -1,3 +1,4 @@
+using CoreSystems.Managers;
 using NUnit.Framework;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -33,6 +34,7 @@ namespace Unity.FantasyKingdom
         {
             if (other.gameObject.CompareTag("Player"))
             {
+                NotificationManager.instance.SetMessage("I am close to you", Color.green);
                 playerInRange = true;
             }
         }

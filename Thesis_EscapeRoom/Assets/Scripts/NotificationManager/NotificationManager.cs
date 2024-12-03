@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,6 +24,14 @@ namespace CoreSystems.Managers
 		[SerializeField] Color32 colorRight = Color.white;
 		[SerializeField] Color32 colorWrong = Color.white;
 
+		public static NotificationManager instance;
+
+        private void Awake()
+        {
+            instance = this;
+
+            window.transform.localScale = new Vector3(0, 0, 0);
+        }
 
         /// <summary>
         /// Define a mensagem, a cor da mensagem e abre a janela da notificação
@@ -36,7 +45,7 @@ namespace CoreSystems.Managers
 			window.localScale = Vector3.zero;
 
 			message.text = text;
-			//message.color = messageColor;
+			message.color = messageColor;
 			var img = window.gameObject.GetComponent<Image>();
 			if(img == null)
 			{
@@ -44,7 +53,7 @@ namespace CoreSystems.Managers
 				return;
 			}
 
-			img.color = messageColor;
+			//img.color = messageColor;
 
 			StartCoroutine(nameof(StartMessage));
 		}
@@ -75,7 +84,7 @@ namespace CoreSystems.Managers
 			float currentDuration = 0f;
 			float currentPercentage = 0f;
 
-			while(currentPercentage < 2f)
+			while(currentPercentage < 1f)
 			{
 				currentDuration += Time.deltaTime;
 
@@ -90,12 +99,37 @@ namespace CoreSystems.Managers
 				yield return null;
 			}
 
-			window.gameObject.SetActive(false);
+			yield return new WaitForSeconds(5);
+
+			StartCoroutine(CloseMessage());
 		}
 
 		public void DisableWindow()
 		{
 			window.gameObject.SetActive(false);
 		}
-	}
+
+        private IEnumerator CloseMessage()
+        {
+            float currentDuration = 0f;
+            float currentPercentage = 0f;
+
+            while (currentPercentage < 1f)
+            {
+                currentDuration += Time.deltaTime;
+
+                currentPercentage = currentDuration / duration;
+
+                var scaleMode = EaseFunctions.GetEasingFunction(easeFunction);
+
+                float value = scaleMode(1f, 0f, currentPercentage);
+
+                window.localScale = new Vector3(value, value, value);
+
+                yield return null;
+            }
+
+			window.transform.localScale = new Vector3(0, 0, 0);
+        }
+    }
 }
