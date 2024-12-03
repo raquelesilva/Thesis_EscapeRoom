@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="197115__kyster__music-from-the-middle-ages-05-2013-08-10-saltarello" ID="{ABA2D36B-1833-4903-873A-4A3F897DE85C}" ShortID="236520554">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="197115__kyster__music-from-the-middle-ages-05-2013-08-10-saltarello" ID="{DB40DA73-00C8-4A3D-8890-2F6E29F35EE4}">
+							<Language>SFX</Language>
+							<AudioFile>197115__kyster__music-from-the-middle-ages-05-2013-08-10-saltarello.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1010230388"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="197115__kyster__music-from-the-middle-ages-05-2013-08-10-saltarello" ID="{DB40DA73-00C8-4A3D-8890-2F6E29F35EE4}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

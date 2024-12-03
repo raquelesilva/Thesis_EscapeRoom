@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3157003241",
+    "Type": "User",
+    "GUID": "{CD24851E-0AEC-47A7-AED1-86B620051FA6}",
+    "Language": "SFX",
+    "Hash": "{BEC5A2A4-9BE0-1FC0-5F77-00B919C5A924}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Test",
+    "ShortName": "Test",
+    "Path": "Test.bnk",
+    "Media": [
+     {
+      "Id": "1010230388",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "197115__kyster__music-from-the-middle-ages-05-2013-08-10-saltarello.wav",
+      "CachePath": "83/{83F9EA2D-7B3C-353B-9C86-DB46B5CB4000}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3157003241",
+      "Name": "Test",
+      "ObjectPath": "\\Events\\Default Work Unit\\Test",
+      "GUID": "{65352A1E-33C9-4C28-9F17-940665AE66E5}",
+      "DurationType": "OneShot",
+      "DurationMin": "240.66434",
+      "DurationMax": "240.66434",
+      "MediaRefs": [
+       {
+        "Id": "1010230388"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{67A7CDF0-E80B-ABE6-0FA1-D9D9EEBC30E8}"
+ }
+}
