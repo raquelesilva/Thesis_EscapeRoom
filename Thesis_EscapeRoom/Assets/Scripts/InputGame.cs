@@ -21,8 +21,6 @@ namespace Unity.FantasyKingdom
 
         public void SetCurrentAnswer(TMP_InputField currentInput)
         {
-            Debug.Log("JBREHGLIJB RJGEJÇBFNJL");
-
             foreach (var answer in allAnswers)
             {
                 if (currentInput == answer.inputField)
