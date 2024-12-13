@@ -4,6 +4,7 @@ using Ink.Runtime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace Unity.FantasyKingdom
 {
@@ -14,14 +15,25 @@ namespace Unity.FantasyKingdom
         [Header("Dialogue UI")]
         [SerializeField] private GameObject dialoguePanel;
         [SerializeField] private TextMeshProUGUI dialogueText;
+        [SerializeField] private TextMeshProUGUI displayNameText;
+        [SerializeField] private Image displayPortrait;
         [SerializeField] private GameObject continueButton;
+        private Animator layoutAnim;
 
         [Header("Choices UI")]
         [SerializeField] private GameObject[] choices;
         private TextMeshProUGUI[] choicesTxt;
 
         private Story currentStory;
+        [SerializeField] private DialogueTrigger currentDialogueTrigger;
         public bool dialogueIsActive;
+
+        private const string speakerTag = "speaker";
+        private const string portraitTag = "portrait";
+        private const string layoutTag = "layout";
+        private const string checkAnswerTag = "checkAnswer";
+        private const string playEventTag = "playEvent";
+        private bool answerValue;
 
         private void Awake()
         {
@@ -41,6 +53,8 @@ namespace Unity.FantasyKingdom
             dialogueIsActive = false;
             dialoguePanel.SetActive(false);
 
+            layoutAnim = dialoguePanel.GetComponent<Animator>();
+
             choicesTxt = new TextMeshProUGUI[choices.Length];
             int index = 0;
 
@@ -59,13 +73,18 @@ namespace Unity.FantasyKingdom
             }
         }
 
-        public void EnterDialogue(TextAsset inkJSON)
+        public void EnterDialogue(TextAsset inkJSON, DialogueTrigger currentTrigger)
         {
             FirstPersonController.instance.SetPause(true);
             
             currentStory = new Story(inkJSON.text);
+            currentDialogueTrigger = currentTrigger;
             dialogueIsActive = true;
             dialoguePanel.SetActive(true);
+
+            // Reset layout, and speaker
+            displayNameText.text = "????";
+            layoutAnim.SetTrigger("right");
 
             ContinueStory();
         }
@@ -78,6 +97,8 @@ namespace Unity.FantasyKingdom
             FirstPersonController.instance.cameraCanMove = true;
             FirstPersonController.instance.enableZoom = true;
 
+            currentStory = null;
+            currentDialogueTrigger = null;
             dialogueIsActive = false;
             dialoguePanel.SetActive(false);
             dialogueText.text = "";
@@ -90,10 +111,62 @@ namespace Unity.FantasyKingdom
                 dialogueText.text = currentStory.Continue();
 
                 DisplayChoices();
+
+                HandleTags(currentStory.currentTags);
             }
             else
             {
                 ExitDialogue();
+            }
+        }
+
+        private void HandleTags(List<string> currentTags)
+        {
+            foreach (var tag in currentTags)
+            {
+                string[] splitTag = tag.Split(':');
+                if (splitTag.Length != 2)
+                {
+                    Debug.Log("Tag could not be appropriatly parsed: " + tag);
+                }
+
+                string tagName = splitTag[0].Trim();
+                string tagValue = splitTag[1].Trim();
+                
+                switch (tagName)
+                {
+                    case speakerTag:
+                        displayNameText.text = tagValue;
+                        break;
+                    case portraitTag:
+                        Debug.Log("portrait = " + tagValue);
+                        break;
+                    case layoutTag:
+                        layoutAnim.SetTrigger(tagValue);
+                        break;
+                    case checkAnswerTag:
+                        if (tagValue == "true")
+                        {
+                            answerValue = true;
+                        }
+                        else if (tagValue == "false")
+                        {
+                            answerValue = false;
+                        }
+                        else
+                        {
+                            Debug.LogError("Couldn't find the correct value!!");
+                        }
+
+                        AdamastorManager.instance.CheckAnswer(answerValue);
+                        break;
+                    case playEventTag:
+                        currentDialogueTrigger.PlayEvents(tagValue);
+                        break;
+                    default:
+                        Debug.LogWarning("Tag came in but is not currently being handled: " + tag);
+                        break;
+                }
             }
         }
 

@@ -1,8 +1,10 @@
 using CoreSystems.Managers;
 using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.TextCore.Text;
 using TextAsset = UnityEngine.TextAsset;
@@ -16,6 +18,8 @@ namespace Unity.FantasyKingdom
 
         private bool playerInRange;
 
+        [SerializeField] List<TriggerEvents> triggerEvents;
+
         private void Awake()
         {
             playerInRange = false;
@@ -23,11 +27,22 @@ namespace Unity.FantasyKingdom
 
         private void Update()
         {
-            if (playerInRange && !DialogueManager.GetInstance().dialogueIsActive && Input.GetKeyUp(KeyCode.E))
+            if (playerInRange && !DialogueManager.GetInstance().dialogueIsActive && Input.GetKeyUp(KeyCode.E) && !FirstPersonController.instance.GetIsGamePaused())
             {
                 Debug.Log("I am in range");
-                DialogueManager.GetInstance().EnterDialogue(inkJS);
+                DialogueManager.GetInstance().EnterDialogue(inkJS, this);
             }   
+        }
+
+        public void PlayEvents(string eventName)
+        {
+            foreach (var evnt in triggerEvents)
+            {
+                if (evnt.eventName == eventName)
+                {
+                    evnt.events.Invoke();
+                }
+            }
         }
 
         private void OnTriggerEnter(Collider other)
@@ -49,4 +64,11 @@ namespace Unity.FantasyKingdom
             }
         }
     }
+}
+
+[Serializable]
+class TriggerEvents
+{
+    public string eventName;
+    public UnityEvent events;
 }

@@ -129,6 +129,7 @@ namespace CoreSystems.Managers
                 yield return null;
             }
 
+
 			window.transform.localScale = new Vector3(0, 0, 0);
         }
     }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 namespace Unity.FantasyKingdom
 {
@@ -15,6 +16,13 @@ namespace Unity.FantasyKingdom
 
         public void StartGame()
         {
+            StartCoroutine(DelayStartGame());
+        }
+
+        IEnumerator DelayStartGame()
+        {
+            yield return new WaitForSeconds(.5f);
+
             gameUI.SetActive(true);
             FirstPersonController.instance.SetPause(true);
         }

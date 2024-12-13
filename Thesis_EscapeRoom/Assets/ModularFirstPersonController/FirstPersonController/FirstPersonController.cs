@@ -22,6 +22,7 @@ public class FirstPersonController : MonoBehaviour
     private Rigidbody rb;
 
     public PlayerMovement playerMovement;
+    [SerializeField] bool isGamePaused;
 
     #region Camera Movement Variables
 
@@ -456,11 +457,17 @@ public class FirstPersonController : MonoBehaviour
 
     public void SetPause(bool isPaused)
     {
+        isGamePaused = isPaused;
         cameraCanMove = !isPaused;
         playerCanMove = !isPaused;
         enableZoom = !isPaused;
         isWalking = !isPaused;
         enableJump = !isPaused;
+    }
+
+    public bool GetIsGamePaused()
+    {
+        return isGamePaused;
     }
 
     // Sets isGrounded based on a raycast sent straigth down from the player object
