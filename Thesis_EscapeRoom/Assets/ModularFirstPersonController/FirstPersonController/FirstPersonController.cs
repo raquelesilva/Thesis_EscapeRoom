@@ -8,8 +8,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.InputSystem;
-using UnityEditor.ShaderGraph;
 
 
 #if UNITY_EDITOR
@@ -404,7 +402,7 @@ public class FirstPersonController : MonoBehaviour
                 targetVelocity = transform.TransformDirection(targetVelocity) * sprintSpeed;
 
                 // Apply a force that attempts to reach our target velocity
-                Vector3 velocity = rb.linearVelocity;
+                Vector3 velocity = rb.velocity;
                 Vector3 velocityChange = (targetVelocity - velocity);
                 velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
                 velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);
@@ -442,7 +440,7 @@ public class FirstPersonController : MonoBehaviour
                 targetVelocity = transform.TransformDirection(targetVelocity) * walkSpeed;
 
                 // Apply a force that attempts to reach our target velocity
-                Vector3 velocity = rb.linearVelocity;
+                Vector3 velocity = rb.velocity;
                 Vector3 velocityChange = (targetVelocity - velocity);
                 velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
                 velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);
@@ -560,8 +558,8 @@ public class FirstPersonController : MonoBehaviour
 
     public void ToggleInteractionPlayer(bool isPlayable)
     {
-        rb.linearVelocity = Vector3.zero;
-        rb.linearDamping = isPlayable ? 0 : 999;
+        rb.velocity = Vector3.zero;
+        //rb.linearDamping = isPlayable ? 0 : 999;
 
         cameraCanMove = isPlayable;
         playerCanMove = isPlayable;

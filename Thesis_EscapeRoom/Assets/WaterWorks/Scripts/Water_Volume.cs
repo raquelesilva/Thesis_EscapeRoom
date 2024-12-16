@@ -4,7 +4,7 @@ using UnityEngine.Rendering.Universal;
 
 public class Water_Volume : ScriptableRendererFeature
 {
-    class CustomRenderPass : ScriptableRenderPass
+    class CustomRenderPass : MonoBehaviour/*ScriptableRenderPass*/
     {
         /*public RenderTargetIdentifier source;
 

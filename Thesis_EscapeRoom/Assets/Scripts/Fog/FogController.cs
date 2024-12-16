@@ -14,7 +14,7 @@ namespace Unity.FantasyKingdom
 
     public class FogController : MonoBehaviour
     {
-        public QualitySettingsController qualityController;
+        /*public QualitySettingsController qualityController;
         public GameObject VolumeHolder;
         public CinemachineCamera VirtualCamera;
         private Volume freeCamVolume;
@@ -223,6 +223,6 @@ namespace Unity.FantasyKingdom
                 CubePass = (FullScreenPassRendererFeature)features[1];
                 CubePass.passMaterial = _originalCubeFog;
             }
-        }
+        }*/
     }
 }
