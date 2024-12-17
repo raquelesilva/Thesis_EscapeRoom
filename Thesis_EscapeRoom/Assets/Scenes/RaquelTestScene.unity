@@ -3264,31 +3264,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1259747089009546338, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259747089009546338, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259747089009546338, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 743.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259747089009546338, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
-      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1259747089009546338, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
-      propertyPath: m_LocalPosition.y
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259747089009546338, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1259747089009546338, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 634
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1259747089009546338, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -26.638336
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1692454093680925315, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3304,14 +3296,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1692454093680925315, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1692454093680925315, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1692454093680925315, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
-      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1692454093680925315, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
@@ -3351,14 +3335,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3484173631251182500, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3484173631251182500, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3484173631251182500, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -3380,14 +3356,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3537448613808748062, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3537448613808748062, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3537448613808748062, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
-      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3537448613808748062, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
@@ -3411,7 +3379,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4039088491359926527, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
-      propertyPath: m_LocalPosition.y
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4039088491359926527, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
@@ -3436,14 +3404,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4281554748982255916, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4281554748982255916, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4281554748982255916, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
-      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4281554748982255916, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
@@ -3543,7 +3503,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7037758659308190955, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
-      propertyPath: m_LocalPosition.y
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7037758659308190955, guid: 680a3d59e83005242995788fbb90a8bd, type: 3}
@@ -4246,6 +4206,22 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventName: ChangeDialogue
+    events:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2026320972}
+          m_TargetAssemblyTypeName: Unity.FantasyKingdom.DialogueTrigger, Assembly-CSharp
+          m_MethodName: ChangeDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 4900000, guid: b7f60734858329245829ed1a01cce5e2, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.TextAsset, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 

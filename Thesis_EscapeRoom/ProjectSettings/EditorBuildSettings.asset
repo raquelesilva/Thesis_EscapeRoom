@@ -12,8 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Demo.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 534d3ccaef261c048832dbdd5199a707
+  - enabled: 1
     path: Assets/Scenes/RaquelTestScene.unity
     guid: 9ddbfa7c0dabaa846b82403388ce5faf
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: d765586159a82614583c3f33e13a56ec, type: 2}
-  m_UseUCBPForAssetBundles: 0

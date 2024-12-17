@@ -63,6 +63,11 @@ namespace Unity.FantasyKingdom
                 DialogueManager.GetInstance().ExitDialogue();
             }
         }
+
+        public void ChangeDialogue(TextAsset newInkJs)
+        {
+            inkJS = newInkJs;
+        }
     }
 }
 

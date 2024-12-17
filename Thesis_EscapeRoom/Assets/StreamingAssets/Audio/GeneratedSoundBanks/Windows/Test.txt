@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3157003241	Test			\Default Work Unit\Test	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1010230388	197115__kyster__music-from-the-middle-ages-05-2013-08-10-saltarello	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\83\{83F9EA2D-7B3C-353B-9C86-DB46B5CB4000}.wem		\Actor-Mixer Hierarchy\Default Work Unit\197115__kyster__music-from-the-middle-ages-05-2013-08-10-saltarello		42453284
+

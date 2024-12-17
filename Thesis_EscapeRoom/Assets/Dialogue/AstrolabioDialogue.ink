@@ -7,7 +7,7 @@
 	-> main
 
 + [Um astrolábio] #checkAnswer:true
-    Exatamente! Um astrolábio seria perfeito para o que precisamos. Mas há um problema… o astrolábio que temos está partido! Vais precisar de procurar as peças que estão espalhadas por esta sala e montá-lo corretamente.
+    Exatamente! Um astrolábio seria perfeito para o que precisamos. Mas há um problema… o astrolábio que temos está partido! Vais precisar de procurar as peças que estão espalhadas por esta sala e montá-lo corretamente. #playEvent:ChangeDialogue
 	-> END
 
 + [Um mapa] #checkAnswer:false
