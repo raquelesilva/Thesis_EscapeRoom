@@ -1,4 +1,4 @@
-﻿Hmmm, não temos como saber para onde ir sem algo que nos ajude a navegar. Precisamos de um instrumento, mas qual seria o mais adequado? O que achas? #speaker:Navegador 1 #portrait:adamastor #layout:right
+Hmmm, não temos como saber para onde ir sem algo que nos ajude a navegar. Precisamos de um instrumento, mas qual seria o mais adequado? O que achas? #speaker:Navegador 1 #portrait:adamastor #layout:right
 -> main
 
 === main ===
