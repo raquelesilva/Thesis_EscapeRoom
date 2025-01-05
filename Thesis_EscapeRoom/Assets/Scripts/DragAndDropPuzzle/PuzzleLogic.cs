@@ -7,11 +7,18 @@ namespace Unity.FantasyKingdom
 {
     public class PuzzleLogic : MonoBehaviour
     {
+        [Header("Dialogue")]
+        [SerializeField] DialogueTrigger dialogueTrigger;
+        [SerializeField] TextAsset poemDialogue;
+        [SerializeField] TextAsset assembleDialogue;
+
         [Header("Objects")]
         [SerializeField] GameObject playerGO;
         [SerializeField] GameObject puzzleCamera;
-        [SerializeField] DialogueTrigger dialogueTrigger;
-        [SerializeField] TextAsset nextDialogue;
+
+        [Header("Find Pieces")]
+        [SerializeField] int catchedPieces = 0;
+        [SerializeField] GameObject findPiecesGO;
 
         [Header("Focus Settings")]
         [SerializeField] Transform puzzleParent; // Parent transform of the puzzle pieces
@@ -32,6 +39,9 @@ namespace Unity.FantasyKingdom
 
         private void Awake()
         {
+            findPiecesGO.SetActive(true);
+            puzzleParent.gameObject.SetActive(false);
+
             if (puzzleCamera == null)
             {
                 puzzleCamera = GetComponentInChildren<Camera>(true).gameObject;
@@ -49,6 +59,20 @@ namespace Unity.FantasyKingdom
             if (_depthOfField != null)
             {
                 _depthOfField.aperture.value = Mathf.Lerp(_depthOfField.aperture.value, 0f, Time.deltaTime * blurTransitionSpeed);
+            }
+        }
+
+        public void GetOnePiece(GameObject piece)
+        {
+            Debug.Log("GetPiece");
+            catchedPieces++;
+            piece.SetActive(false);
+
+            if (catchedPieces == numPieces)
+            {
+                findPiecesGO.SetActive(false);
+                puzzleParent.gameObject.SetActive(true);
+                dialogueTrigger.ChangeDialogue(assembleDialogue);
             }
         }
 
@@ -98,7 +122,6 @@ namespace Unity.FantasyKingdom
         public void PieceAligned()
         {
             _piecesAligned++;
-            Debug.Log("Piece aligned: " + _piecesAligned);
 
             if (_piecesAligned == numPieces)
             {
@@ -115,7 +138,7 @@ namespace Unity.FantasyKingdom
         {
             puzzleCamera.SetActive(false);
             playerGO.SetActive(true);
-            dialogueTrigger.ChangeDialogue(nextDialogue);
+            dialogueTrigger.ChangeDialogue(poemDialogue);
 
             StartCoroutine(MoveToFocusPoint(puzzleParent, _puzzleInitialPosition));
         }

@@ -47,16 +47,20 @@ public class InteractionSystem : MonoBehaviour
     void Interact()
     {
         RaycastHit hit;
-
+        Debug.Log("Interact");
         // Cria um raycast a partir da câmera
         Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
-
+        Debug.Log("ray: " + ray);
+        Debug.Log("interactionDistance: " + interactionDistance);
+        Debug.Log("interactableLayer: " + interactableLayer);
         if (Physics.Raycast(ray, out hit, interactionDistance, interactableLayer))
         {
             IInteractable interactable = hit.collider.GetComponent<IInteractable>();
+            Debug.Log("Is hitting: " + interactable);
 
             if (interactable != null)
             {
+                Debug.Log("NOT NULL: " + interactable);
                 interactable.Interact(); // Chama a função de interação
 
                 // Verifica e aplica o foco se necessário

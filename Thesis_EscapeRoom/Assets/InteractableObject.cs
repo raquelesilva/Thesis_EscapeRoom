@@ -17,6 +17,7 @@ public class InteractableObject : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        Debug.Log("Invoke Interact");
         onInteract?.Invoke();
     }
 
