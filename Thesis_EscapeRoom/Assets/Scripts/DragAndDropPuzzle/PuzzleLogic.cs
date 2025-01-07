@@ -39,6 +39,7 @@ namespace Unity.FantasyKingdom
 
         private void Awake()
         {
+            enabled = true;
             findPiecesGO.SetActive(true);
             puzzleParent.gameObject.SetActive(false);
 
@@ -73,6 +74,7 @@ namespace Unity.FantasyKingdom
                 findPiecesGO.SetActive(false);
                 puzzleParent.gameObject.SetActive(true);
                 dialogueTrigger.ChangeDialogue(assembleDialogue);
+                Camera.main.gameObject.SetActive(false);
             }
         }
 
@@ -139,6 +141,7 @@ namespace Unity.FantasyKingdom
             puzzleCamera.SetActive(false);
             playerGO.SetActive(true);
             dialogueTrigger.ChangeDialogue(poemDialogue);
+            Camera.main.gameObject.SetActive(true);
 
             StartCoroutine(MoveToFocusPoint(puzzleParent, _puzzleInitialPosition));
         }
