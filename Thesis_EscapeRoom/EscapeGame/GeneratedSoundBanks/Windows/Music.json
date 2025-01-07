@@ -1,0 +1,89 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3991942870",
+    "Type": "User",
+    "GUID": "{B0DFE454-E19C-4585-9637-EECBBEDDBF0A}",
+    "Language": "SFX",
+    "Hash": "{27BF1E08-761E-0579-69F7-32108F6697C3}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
+    "ShortName": "Music",
+    "Path": "Music.bnk",
+    "Media": [
+     {
+      "Id": "338140016",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SailorIdle - Track 1.wav",
+      "CachePath": "5A/{5A390936-1B11-C945-2600-2FE4B7DEE158}.wem"
+     },
+     {
+      "Id": "360560811",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SailorIdle - Track 2.wav",
+      "CachePath": "F2/{F24B4F2F-EF1C-62E5-90FA-6835F6EDF525}.wem"
+     },
+     {
+      "Id": "426221048",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SailorIdle - Track 5.wav",
+      "CachePath": "54/{5423D00B-AE59-D180-F61A-454D5620C2CB}.wem"
+     },
+     {
+      "Id": "472319865",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SailorIdle - Track 3.wav",
+      "CachePath": "25/{2558FD7B-4477-C77F-5F76-52352A6A43BB}.wem"
+     },
+     {
+      "Id": "992147341",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SailorIdle - Track 4.wav",
+      "CachePath": "6F/{6F153424-2865-34B5-2A26-F344BDF85EDF}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2630200976",
+      "Name": "InGameMusic_Play",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\InGameMusic_Play",
+      "GUID": "{65352A1E-33C9-4C28-9F17-940665AE66E5}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "338140016"
+       },
+       {
+        "Id": "360560811"
+       },
+       {
+        "Id": "426221048"
+       },
+       {
+        "Id": "472319865"
+       },
+       {
+        "Id": "992147341"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{A7199FAB-6CE8-93AE-213A-B7B0D73F2ED9}"
+ }
+}

@@ -3,17 +3,21 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Test" ID="{65352A1E-33C9-4C28-9F17-940665AE66E5}">
+				<Folder Name="Music" ID="{A7AC57D0-D3C1-4A11-ACDC-83F170BF4A6A}" ShortID="408413901">
 					<ChildrenList>
-						<Action Name="" ID="{E6AA511F-A974-4C89-82AC-545D4EC0CC43}" ShortID="380251223">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="197115__kyster__music-from-the-middle-ages-05-2013-08-10-saltarello" ID="{ABA2D36B-1833-4903-873A-4A3F897DE85C}" WorkUnitID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="InGameMusic_Play" ID="{65352A1E-33C9-4C28-9F17-940665AE66E5}">
+							<ChildrenList>
+								<Action Name="" ID="{E6AA511F-A974-4C89-82AC-545D4EC0CC43}" ShortID="380251223">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="InGameMusic" ID="{0E8B34BF-694B-4097-B860-ACAEB91A8707}" WorkUnitID="{51DD22A6-3289-42B5-B5B7-139DFE8B99DF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
