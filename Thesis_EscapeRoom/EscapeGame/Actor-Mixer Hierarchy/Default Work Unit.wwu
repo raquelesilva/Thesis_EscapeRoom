@@ -1,6 +1,898 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="AmbienceShip" ID="{6D98E84B-910D-4F04-ADFF-EE962728E232}" ShortID="178753914">
+					<ChildrenList>
+						<BlendContainer Name="AmbShip" ID="{18F2B650-E6D7-45D3-90A2-575FFE072E2A}" ShortID="901835241">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>31</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>23</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Sails" ID="{8B01BBAB-AA51-44DB-852B-823C7473E699}" ShortID="439945457">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1200</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sails" ID="{50474489-3EB1-4DA1-BD53-DBC29ED8E5B6}">
+											<Language>SFX</Language>
+											<AudioFile>Sails.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="771722958"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sails" ID="{50474489-3EB1-4DA1-BD53-DBC29ED8E5B6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="SailsMore" ID="{29529743-E205-48B7-A44D-36E2BFD72CD8}" ShortID="740806507">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{294BE51F-302B-4E37-8BC7-9C5D61C03833}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="175"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AA546D93-199D-4F24-82C1-9DD9A27A54A5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SailsOneShot" ID="{A6102587-F186-49C8-A2C5-14645E4C1D2C}" ShortID="486817652">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>25</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SailsOneShot" ID="{9E9EE3B3-30AF-4AA4-BE9C-6D7121F04F58}">
+													<Language>SFX</Language>
+													<AudioFile>SailsOneShot.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1023319846"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SailsOneShot" ID="{9E9EE3B3-30AF-4AA4-BE9C-6D7121F04F58}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Silence" ID="{A4BA8610-7478-42CA-B1D2-20B6F9AA5EF8}" ShortID="285557058">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>68</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Silence" ID="{2F5D67DC-570E-4FAA-8C94-1253829A9188}" ShortID="483242044" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="6"/>
+														<Property Name="LengthMax" Type="Real32" Value="1.5"/>
+														<Property Name="LengthMin" Type="Real32" Value="-1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Silence" ID="{2F5D67DC-570E-4FAA-8C94-1253829A9188}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="WaveLoopsActual" ID="{F2AC9A80-84A2-4C32-8064-656F4E761004}" ShortID="232427332">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WaveLoopsActual" ID="{8239386C-2CD6-4632-A825-88A58C6352B6}">
+											<Language>SFX</Language>
+											<AudioFile>WaveLoopsActual.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="932526148"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="WaveLoopsActual" ID="{8239386C-2CD6-4632-A825-88A58C6352B6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SailsLoop_2" ID="{0AFD6572-119C-461E-8B51-82B2EDEB09A0}" ShortID="133920789">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SailsLoop_2" ID="{17B5BE98-709E-482B-AABA-7C92AF4B337A}">
+											<Language>SFX</Language>
+											<AudioFile>SailsLoop_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="663797679"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SailsLoop_2" ID="{17B5BE98-709E-482B-AABA-7C92AF4B337A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Woodsqueacks" ID="{1D64281B-CB4A-47E5-A8F6-6ABAA1A61D06}" ShortID="687514367">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-500</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ship_squeack_2" ID="{ED48F848-C6BA-414A-8984-A7FE3EEF5B24}" ShortID="97332594">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9F1F3960-8993-42BF-AC00-8BEEDA1B9D30}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{1B3103F2-1C59-4BA5-88E9-6D6083547B2A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-7"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>17</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ship_squeack_2" ID="{69636430-C3E8-4F83-8CDE-1BB6CA9A0CE7}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0730966247518477"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.141093484986125"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ship_squeack_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1000102019"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ship_squeack_2" ID="{69636430-C3E8-4F83-8CDE-1BB6CA9A0CE7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ship_squeack_3" ID="{A7CA2297-B3A8-442B-AF36-239F15B1709B}" ShortID="280826992">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>23</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ship_squeack_3" ID="{35B1C0E0-F23B-4AE4-8BC6-F917F8196506}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.209090768949024"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.318388216354195"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ship_squeack_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="30702727"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ship_squeack_3" ID="{35B1C0E0-F23B-4AE4-8BC6-F917F8196506}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ship_squeack_4" ID="{2A5309F1-DCFC-4E14-87C1-F800AA826E79}" ShortID="526163267">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>27</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ship_squeack_4" ID="{3D630411-2CDC-4E9E-A3FA-B413A04690F1}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.117450170261682"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.120540964215937"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ship_squeack_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="292681309"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ship_squeack_4" ID="{3D630411-2CDC-4E9E-A3FA-B413A04690F1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ship_squeack_5" ID="{94D58F44-F002-4419-9988-532347A8A641}" ShortID="1070262102">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{BDB5BEB1-D450-423D-866B-52408B596415}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-350"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{EEF9DE14-F84F-40F0-9719-7A36D5ECDF90}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-9"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>21</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ship_squeack_5" ID="{F3ABB532-DAE9-4700-993F-4EE6284D2DC4}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0640954198618464"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0854605598157954"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ship_squeack_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="351161049"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ship_squeack_5" ID="{F3ABB532-DAE9-4700-993F-4EE6284D2DC4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ship_squeack_6" ID="{F4ABDA8D-FB2F-43C9-AC14-22E97E552BED}" ShortID="29910842">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{EDAC7E7C-4414-491F-AD3D-0A99C741D097}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-8"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>26</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ship_squeack_6" ID="{F2C76BA6-72C4-4FEF-8999-F5DAB344AA64}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.193791051667689"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0951956043279878"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ship_squeack_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="307430808"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ship_squeack_6" ID="{F2C76BA6-72C4-4FEF-8999-F5DAB344AA64}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ship_squeack_7" ID="{7BC0EA78-CC71-495A-B17B-3470A033738B}" ShortID="202965688">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>26</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ship_squeack_7" ID="{780E5B1F-0EF8-4864-A5D3-F7DBC653FF08}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0985184910192544"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0804567676657246"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ship_squeack_7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="347357659"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ship_squeack_7" ID="{780E5B1F-0EF8-4864-A5D3-F7DBC653FF08}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ship_squeack_8" ID="{E556D299-9144-4FED-9811-2AF77DBDD6FE}" ShortID="920806499">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>23</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ship_squeack_8" ID="{8CC15F1F-D790-48C1-9F1C-234AB4154AA6}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0788153106806155"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.130045262623016"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ship_squeack_8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="245953259"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ship_squeack_8" ID="{8CC15F1F-D790-48C1-9F1C-234AB4154AA6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ship_squeack_9" ID="{10C69AA3-1837-48B6-BFF4-413D39FEA75C}" ShortID="650946412">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>21</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ship_squeack_9" ID="{7C9E6515-9C13-4081-B56F-FF45A38336D3}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.136129990020628"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.161165390484192"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ship_squeack_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="31222888"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ship_squeack_9" ID="{7C9E6515-9C13-4081-B56F-FF45A38336D3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ship_squeack_10" ID="{BCDDCA3E-308F-4CB8-ACDB-A78CF2741BF1}" ShortID="157562300">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>13</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ship_squeack_10" ID="{F7E58E19-5393-4301-9BEE-DE6A2EA60AB4}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.160354968466677"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.26298214828535"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ship_squeack_10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="285493512"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ship_squeack_10" ID="{F7E58E19-5393-4301-9BEE-DE6A2EA60AB4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ship_squeack_11" ID="{AAA87CB1-0FB5-4426-944D-1FE9D6474AA8}" ShortID="154701788">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>13</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ship_squeack_11" ID="{E461C072-7B60-4542-8734-781BAAF7BC43}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.194937713287528"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.186209158961221"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ship_squeack_11.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1051285658"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ship_squeack_11" ID="{E461C072-7B60-4542-8734-781BAAF7BC43}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ship_squeack_12" ID="{FEF97C3B-3BA8-4364-99EC-4476EB40EE3A}" ShortID="1034967062">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ship_squeack_12" ID="{13AD06B9-3870-4729-B0A7-CADBAC0B8844}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.103754286100486"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.134880571930632"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ship_squeack_12.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="534969521"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ship_squeack_12" ID="{13AD06B9-3870-4729-B0A7-CADBAC0B8844}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ship_squeack_13" ID="{0F59D52D-8057-4004-B6E4-D07F8F8C2875}" ShortID="900938515">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3AB0DB29-A217-4949-B6C8-F6EA18754C8E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-275"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{47F37921-66B2-4FF3-AEDF-59FFB634E1E9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-7"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>13</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ship_squeack_13" ID="{30426712-7E55-41EE-B6AF-01FD17E6FAE5}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.158101482099602"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.284582667779285"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ship_squeack_13.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="273255614"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ship_squeack_13" ID="{30426712-7E55-41EE-B6AF-01FD17E6FAE5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ship_squeack_14" ID="{1BDAD27D-AA6F-4A66-890B-C3CF5085D10A}" ShortID="179555448">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B64EA047-1312-4763-B0DB-7B82D9063EE6}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-350"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A70FDE08-C52F-4D58-BFFE-9F372E67401A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-8"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>21</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ship_squeack_14" ID="{74124D03-770A-444A-B7CD-A889B9635AA4}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0979903984252171"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.127387517952782"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ship_squeack_14.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="681537784"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ship_squeack_14" ID="{74124D03-770A-444A-B7CD-A889B9635AA4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ship_squeack_15" ID="{3974F6B5-EF24-4710-B09F-06A84A2CDC2B}" ShortID="909655577">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9E1798B4-2C80-4A0B-AFC2-E8EE75AA1F1C}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-250"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C34D5711-7543-4FA0-94D7-57B86B9AC6D6}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-7"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ship_squeack_15" ID="{4897A58B-3B7E-447F-A6FB-4BBBC12B8CE4}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.118782661385108"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.281199769809643"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ship_squeack_15.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="619488382"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ship_squeack_15" ID="{4897A58B-3B7E-447F-A6FB-4BBBC12B8CE4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="New Silence" ID="{1B454088-9237-44BB-9702-080D88922584}" ShortID="953743607">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>82</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Silence" ID="{12748639-8218-4431-8ED0-B7060101D25A}" ShortID="589117352" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="4.5"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Silence" ID="{12748639-8218-4431-8ED0-B7060101D25A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{67AE8138-ECDA-47A2-B26E-ED9D3200183D}"/>
+							</PositioningInfo>
+						</BlendContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

@@ -331,8 +331,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1f50a62127bee343bb0c6a99c04d67f4
     GuidInternal: 
-    m_lastTime: -8584654078979060588
+    m_lastTime: -8584653485636936619
     List:
+    - name: Ambience
+      guid: 3ff4e9aa69563a488a34f525fec9de8f
+      id: 85412153
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1f50a62127bee343bb0c6a99c04d67f4
+      - ElementName: Ambience
+        ObjectType: 7
+        guid: 3ff4e9aa69563a488a34f525fec9de8f
+      Path: SoundBanks\Default Work Unit\Ambience
     - name: Music
       guid: 54e4dfb09ce185459637eecbbeddbf0a
       id: 3991942870
@@ -347,20 +361,6 @@ MonoBehaviour:
         ObjectType: 7
         guid: 54e4dfb09ce185459637eecbbeddbf0a
       Path: SoundBanks\Default Work Unit\Music
-    - name: Test
-      guid: 1e8524cdec0aa747aed186b620051fa6
-      id: 3157003241
-      PathAndIcons:
-      - ElementName: SoundBanks
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1f50a62127bee343bb0c6a99c04d67f4
-      - ElementName: Test
-        ObjectType: 7
-        guid: 1e8524cdec0aa747aed186b620051fa6
-      Path: SoundBanks\Default Work Unit\Test
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -373,8 +373,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5a6816154c16e34f97734d5caeec72e2
     GuidInternal: 
-    m_lastTime: -8584654079064613577
+    m_lastTime: -8584653489770891486
     List:
+    - name: Ambience
+      guid: 309885b71fc2074c8c937568c52da7bb
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5a6816154c16e34f97734d5caeec72e2
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 309885b71fc2074c8c937568c52da7bb
+      Path: Events\Default Work Unit\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: InGameMusic_Play
       guid: 1e2a3565c933284c9f17940665ae66e5
       id: 2630200976
@@ -393,8 +410,8 @@ MonoBehaviour:
         guid: 1e2a3565c933284c9f17940665ae66e5
       Path: Events\Default Work Unit\Music\InGameMusic_Play
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Music
       guid: d057aca7c1d3114aacdc83f170bf4a6a
       id: 3991942870
@@ -412,6 +429,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: ShipAmbience
+      guid: 900d9668d2b312408655c934c67b980b
+      id: 1423153471
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5a6816154c16e34f97734d5caeec72e2
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 309885b71fc2074c8c937568c52da7bb
+      - ElementName: ShipAmbience
+        ObjectType: 3
+        guid: 900d9668d2b312408655c934c67b980b
+      Path: Events\Default Work Unit\Ambience\ShipAmbience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -622,7 +659,7 @@ MonoBehaviour:
     m_lastTime: -8584675763501922922
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000a0000000b0000000c000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000b0000000c000000230000006c0000006d0000006e000000930000009400000095000000d0000000d1000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

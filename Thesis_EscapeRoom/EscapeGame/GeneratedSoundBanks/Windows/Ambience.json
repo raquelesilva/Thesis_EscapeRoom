@@ -1,0 +1,262 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "85412153",
+    "Type": "User",
+    "GUID": "{AAE9F43F-5669-483A-8A34-F525FEC9DE8F}",
+    "Language": "SFX",
+    "Hash": "{407AFFD2-D327-8726-1B54-B78495AF39E6}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Ambience",
+    "ShortName": "Ambience",
+    "Path": "Ambience.bnk",
+    "Media": [
+     {
+      "Id": "30702727",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_3.wav",
+      "CachePath": "B3/{B3BF8790-A908-A355-5E6F-FD84FE7A7B4E}.wem"
+     },
+     {
+      "Id": "31222888",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_9.wav",
+      "CachePath": "CA/{CA2EE008-0130-29A7-28E7-A10BFB2E8813}.wem"
+     },
+     {
+      "Id": "245953259",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_8.wav",
+      "CachePath": "6A/{6A107CEA-0200-6DFC-8CAC-DBDA5824CA6A}.wem"
+     },
+     {
+      "Id": "273255614",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_13.wav",
+      "CachePath": "A5/{A5123BB3-FA29-5D63-F510-B246FC160F0E}.wem"
+     },
+     {
+      "Id": "285493512",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_10.wav",
+      "CachePath": "59/{59816A7A-0308-A2C8-92C1-9F1AADE3030F}.wem"
+     },
+     {
+      "Id": "292681309",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_4.wav",
+      "CachePath": "57/{576527F2-9960-F13E-C0A8-5552450A8534}.wem"
+     },
+     {
+      "Id": "307430808",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_6.wav",
+      "CachePath": "5B/{5BFD88E4-AEF1-3841-0CB7-861796D6DDF6}.wem"
+     },
+     {
+      "Id": "347357659",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_7.wav",
+      "CachePath": "E6/{E6499EE4-E733-3E8E-4163-7C44ABE652ED}.wem"
+     },
+     {
+      "Id": "351161049",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_5.wav",
+      "CachePath": "98/{98E42D7A-BE1B-DB80-72DE-8ED86EE3E873}.wem"
+     },
+     {
+      "Id": "534969521",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_12.wav",
+      "CachePath": "BB/{BB462D82-BB91-B0EF-EAFA-4BD8F91C0195}.wem"
+     },
+     {
+      "Id": "619488382",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_15.wav",
+      "CachePath": "89/{89F8600A-0E7E-2C31-D805-5A0F89117659}.wem"
+     },
+     {
+      "Id": "663797679",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SailsLoop_2.wav",
+      "CachePath": "72/{72841321-26BB-6DBF-E1CC-9BDFEED30331}.wem"
+     },
+     {
+      "Id": "681537784",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_14.wav",
+      "CachePath": "21/{21C36D6B-A4B3-63EC-79AC-7C71ADAF7CF8}.wem"
+     },
+     {
+      "Id": "771722958",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sails.wav",
+      "CachePath": "46/{461596F7-DFC0-660B-3129-F61655168AB3}.wem"
+     },
+     {
+      "Id": "932526148",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaveLoopsActual.wav",
+      "CachePath": "CC/{CCB719C9-F070-08E1-474B-C481478751C2}.wem"
+     },
+     {
+      "Id": "1000102019",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_2.wav",
+      "CachePath": "76/{76D40C9D-A9EC-FEFE-E303-41E1853A900E}.wem"
+     },
+     {
+      "Id": "1023319846",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SailsOneShot.wav",
+      "CachePath": "69/{6980A812-2603-A744-790D-5AE22D58560A}.wem"
+     },
+     {
+      "Id": "1051285658",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_11.wav",
+      "CachePath": "D1/{D1C1CC0C-AFA8-11A3-63FB-F45AF0B7CBB3}.wem"
+     }
+    ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "483242044",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\AmbienceShip\\AmbShip\\SailsMore\\Silence\\Silence",
+       "GUID": "{2F5D67DC-570E-4FAA-8C94-1253829A9188}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "589117352",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\AmbienceShip\\AmbShip\\Woodsqueacks\\New Silence\\Silence",
+       "GUID": "{12748639-8218-4431-8ED0-B7060101D25A}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "1423153471",
+      "Name": "ShipAmbience",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\ShipAmbience",
+      "GUID": "{68960D90-B3D2-4012-8655-C934C67B980B}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "30702727"
+       },
+       {
+        "Id": "31222888"
+       },
+       {
+        "Id": "245953259"
+       },
+       {
+        "Id": "273255614"
+       },
+       {
+        "Id": "285493512"
+       },
+       {
+        "Id": "292681309"
+       },
+       {
+        "Id": "307430808"
+       },
+       {
+        "Id": "347357659"
+       },
+       {
+        "Id": "351161049"
+       },
+       {
+        "Id": "534969521"
+       },
+       {
+        "Id": "619488382"
+       },
+       {
+        "Id": "663797679"
+       },
+       {
+        "Id": "681537784"
+       },
+       {
+        "Id": "771722958"
+       },
+       {
+        "Id": "932526148"
+       },
+       {
+        "Id": "1000102019"
+       },
+       {
+        "Id": "1023319846"
+       },
+       {
+        "Id": "1051285658"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "483242044"
+        },
+        {
+         "Id": "589117352"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{7A9579C1-9CBC-E3A3-E311-8E7C24C41B3B}"
+ }
+}

@@ -18,6 +18,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Ambience" ID="{B7859830-C21F-4C07-8C93-7568C52DA7BB}" ShortID="895424542">
+					<ChildrenList>
+						<Event Name="ShipAmbience" ID="{68960D90-B3D2-4012-8655-C934C67B980B}">
+							<ChildrenList>
+								<Action Name="" ID="{3B135DDA-27D5-400B-BCBA-C0DC40977426}" ShortID="602189224">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AmbShip" ID="{18F2B650-E6D7-45D3-90A2-575FFE072E2A}" WorkUnitID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

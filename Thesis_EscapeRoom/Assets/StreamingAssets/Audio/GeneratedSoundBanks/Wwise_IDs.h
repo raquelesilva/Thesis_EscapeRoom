@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID INGAMEMUSIC_PLAY = 2630200976U;
+        static const AkUniqueID SHIPAMBIENCE = 1423153471U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
@@ -33,8 +34,8 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID MUSIC = 3991942870U;
-        static const AkUniqueID TEST = 3157003241U;
     } // namespace BANKS
 
     namespace BUSSES

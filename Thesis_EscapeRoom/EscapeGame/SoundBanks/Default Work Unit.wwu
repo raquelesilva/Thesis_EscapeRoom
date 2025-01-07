@@ -3,16 +3,16 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{21A6501F-BE27-43E3-BB0C-6A99C04D67F4}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Test" ID="{CD24851E-0AEC-47A7-AED1-86B620051FA6}">
+				<SoundBank Name="Music" ID="{B0DFE454-E19C-4585-9637-EECBBEDDBF0A}">
 					<ObjectInclusionList>
 						<ObjectRef Name="InGameMusic_Play" ID="{65352A1E-33C9-4C28-9F17-940665AE66E5}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="Music" ID="{B0DFE454-E19C-4585-9637-EECBBEDDBF0A}">
+				<SoundBank Name="Ambience" ID="{AAE9F43F-5669-483A-8A34-F525FEC9DE8F}">
 					<ObjectInclusionList>
-						<ObjectRef Name="InGameMusic_Play" ID="{65352A1E-33C9-4C28-9F17-940665AE66E5}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ShipAmbience" ID="{68960D90-B3D2-4012-8655-C934C67B980B}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
