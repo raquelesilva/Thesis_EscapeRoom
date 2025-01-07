@@ -54,6 +54,11 @@ namespace Unity.FantasyKingdom
             }
         }
 
+        private void Start()
+        {
+            gameObject.SetActive(false);
+        }
+
         private void Update()
         {
             // Smoothly reduce blur intensity over time
