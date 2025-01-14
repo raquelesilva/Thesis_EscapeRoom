@@ -31,6 +31,43 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="WaveEmitter_1" ID="{A88A07FA-821B-44DA-904C-9792A79EE71E}">
+							<ChildrenList>
+								<Action Name="" ID="{1A62D6A8-CBBB-4660-837C-5369071FE91D}" ShortID="931499790">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WavesEmitter_1" ID="{8359FF98-34FB-4E95-B897-9B2D44AF159D}" WorkUnitID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WaveEmitter_2" ID="{598643B7-7DDA-4195-998E-024010BB7B8A}">
+							<ChildrenList>
+								<Action Name="" ID="{2D0AB10A-71A4-442E-8E74-C27411A3A173}" ShortID="764207995">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WaveEmitter_2" ID="{05F2AAEF-85D2-4868-ACC6-35F6C76AF6A1}" WorkUnitID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Charactert" ID="{EAA1F03A-D950-4F95-8881-6BF4A310CACD}" ShortID="486927737">
+					<ChildrenList>
+						<Event Name="Play_Footsteps" ID="{9270F56E-4840-4BB9-8915-AB087060B472}">
+							<ChildrenList>
+								<Action Name="" ID="{F6C007F6-2A94-4168-9FC5-98A4884EE129}" ShortID="800959413">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Steps" ID="{9A6A1D55-A9CB-4D20-B420-F60BA700D0DE}" WorkUnitID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

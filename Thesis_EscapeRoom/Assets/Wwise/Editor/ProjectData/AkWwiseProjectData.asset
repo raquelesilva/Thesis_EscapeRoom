@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1f50a62127bee343bb0c6a99c04d67f4
     GuidInternal: 
-    m_lastTime: -8584653485636936619
+    m_lastTime: -8584647610742016542
     List:
     - name: Ambience
       guid: 3ff4e9aa69563a488a34f525fec9de8f
@@ -347,6 +347,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 3ff4e9aa69563a488a34f525fec9de8f
       Path: SoundBanks\Default Work Unit\Ambience
+    - name: Character
+      guid: aca98d58ae602248b457989dd72a8830
+      id: 436743010
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1f50a62127bee343bb0c6a99c04d67f4
+      - ElementName: Character
+        ObjectType: 7
+        guid: aca98d58ae602248b457989dd72a8830
+      Path: SoundBanks\Default Work Unit\Character
     - name: Music
       guid: 54e4dfb09ce185459637eecbbeddbf0a
       id: 3991942870
@@ -373,7 +387,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5a6816154c16e34f97734d5caeec72e2
     GuidInternal: 
-    m_lastTime: -8584653489770891486
+    m_lastTime: -8584647610742036519
     List:
     - name: Ambience
       guid: 309885b71fc2074c8c937568c52da7bb
@@ -389,6 +403,23 @@ MonoBehaviour:
         ObjectType: 4
         guid: 309885b71fc2074c8c937568c52da7bb
       Path: Events\Default Work Unit\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Charactert
+      guid: 3af0a1ea50d9954f88816bf4a310cacd
+      id: 1557941042
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5a6816154c16e34f97734d5caeec72e2
+      - ElementName: Charactert
+        ObjectType: 4
+        guid: 3af0a1ea50d9954f88816bf4a310cacd
+      Path: Events\Default Work Unit\Charactert
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -429,6 +460,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Footsteps
+      guid: 6ef570924048b94b8915ab087060b472
+      id: 3854155799
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5a6816154c16e34f97734d5caeec72e2
+      - ElementName: Charactert
+        ObjectType: 4
+        guid: 3af0a1ea50d9954f88816bf4a310cacd
+      - ElementName: Play_Footsteps
+        ObjectType: 3
+        guid: 6ef570924048b94b8915ab087060b472
+      Path: Events\Default Work Unit\Charactert\Play_Footsteps
+      maxAttenuation: 0
+      maxDuration: 2.7138107
+      minDuration: 1.0283345
     - name: ShipAmbience
       guid: 900d9668d2b312408655c934c67b980b
       id: 1423153471
@@ -449,6 +500,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: WaveEmitter_1
+      guid: fa078aa81b82da44904c9792a79ee71e
+      id: 3193985440
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5a6816154c16e34f97734d5caeec72e2
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 309885b71fc2074c8c937568c52da7bb
+      - ElementName: WaveEmitter_1
+        ObjectType: 3
+        guid: fa078aa81b82da44904c9792a79ee71e
+      Path: Events\Default Work Unit\Ambience\WaveEmitter_1
+      maxAttenuation: 15
+      maxDuration: 0
+      minDuration: 0
+    - name: WaveEmitter_2
+      guid: b7438659da7d9541998e024010bb7b8a
+      id: 3193985443
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5a6816154c16e34f97734d5caeec72e2
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 309885b71fc2074c8c937568c52da7bb
+      - ElementName: WaveEmitter_2
+        ObjectType: 3
+        guid: b7438659da7d9541998e024010bb7b8a
+      Path: Events\Default Work Unit\Ambience\WaveEmitter_2
+      maxAttenuation: 15
+      maxDuration: 71.42519
+      minDuration: 71.42519
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -628,8 +719,74 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 9a56f2c7c77b17469a2c94ad2a74e775
     GuidInternal: 
-    m_lastTime: -8584675763501922922
-    List: []
+    m_lastTime: -8584647606495000040
+    List:
+    - name: AmbienceState
+      guid: 71b93c4f626cfb4ca19652e03bd715f3
+      id: 1686518004
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9a56f2c7c77b17469a2c94ad2a74e775
+      - ElementName: AmbienceState
+        ObjectType: 9
+        guid: 71b93c4f626cfb4ca19652e03bd715f3
+      Path: States\Default Work Unit\AmbienceState
+      values:
+      - name: BelowDeck
+        guid: d7d067549126db4eb79a7bb0b7257a0a
+        id: 1043057783
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9a56f2c7c77b17469a2c94ad2a74e775
+        - ElementName: AmbienceState
+          ObjectType: 9
+          guid: 71b93c4f626cfb4ca19652e03bd715f3
+        - ElementName: BelowDeck
+          ObjectType: 8
+          guid: d7d067549126db4eb79a7bb0b7257a0a
+      - name: None
+        guid: de8f8a924d3d924c94927327af3894cd
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9a56f2c7c77b17469a2c94ad2a74e775
+        - ElementName: AmbienceState
+          ObjectType: 9
+          guid: 71b93c4f626cfb4ca19652e03bd715f3
+        - ElementName: None
+          ObjectType: 8
+          guid: de8f8a924d3d924c94927327af3894cd
+      - name: OnDeck
+        guid: dc0612509bfe714197db163b04af5c83
+        id: 3894681889
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9a56f2c7c77b17469a2c94ad2a74e775
+        - ElementName: AmbienceState
+          ObjectType: 9
+          guid: 71b93c4f626cfb4ca19652e03bd715f3
+        - ElementName: OnDeck
+          ObjectType: 8
+          guid: dc0612509bfe714197db163b04af5c83
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -659,7 +816,7 @@ MonoBehaviour:
     m_lastTime: -8584675763501922922
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000b0000000c000000230000006c0000006d0000006e000000930000009400000095000000d0000000d1000000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000002300000067000000680000006c0000006d0000006e0000007300000074000000750000008b0000008c000000930000009400000095000000d0000000d1000000f4000000f500000066010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

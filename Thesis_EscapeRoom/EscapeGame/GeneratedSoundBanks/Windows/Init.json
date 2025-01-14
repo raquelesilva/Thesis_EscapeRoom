@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{FA3EE4D3-7642-2F72-600F-CCBC8B32C9D2}",
+    "Hash": "{6D966023-A69E-06E5-4E95-FD6EEECF6EDD}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -102,6 +102,34 @@
       "Name": "SS_Air_Turbulence",
       "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Turbulence",
       "GUID": "{EDA87B19-73AA-40A0-9F19-2073606DB710}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1686518004",
+      "Name": "AmbienceState",
+      "ObjectPath": "\\States\\Default Work Unit\\AmbienceState",
+      "GUID": "{4F3CB971-6C62-4CFB-A196-52E03BD715F3}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\AmbienceState\\None",
+        "GUID": "{928A8FDE-3D4D-4C92-9492-7327AF3894CD}"
+       },
+       {
+        "Id": "1043057783",
+        "Name": "BelowDeck",
+        "ObjectPath": "\\States\\Default Work Unit\\AmbienceState\\BelowDeck",
+        "GUID": "{5467D0D7-2691-4EDB-B79A-7BB0B7257A0A}"
+       },
+       {
+        "Id": "3894681889",
+        "Name": "OnDeck",
+        "ObjectPath": "\\States\\Default Work Unit\\AmbienceState\\OnDeck",
+        "GUID": "{501206DC-FE9B-4171-97DB-163B04AF5C83}"
+       }
+      ]
      }
     ],
     "AcousticTextures": [
@@ -570,6 +598,6 @@
     ]
    }
   ],
-  "FileHash": "{CF172777-471F-1E28-0758-0AB6872E76E7}"
+  "FileHash": "{0348B026-0308-E610-5EE9-7AF615EDB36B}"
  }
 }

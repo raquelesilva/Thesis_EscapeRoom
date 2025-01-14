@@ -67,6 +67,27 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="AmbienceState" ID="{4F3CB971-6C62-4CFB-A196-52E03BD715F3}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="OnDeck" ID="{501206DC-FE9B-4171-97DB-163B04AF5C83}"/>
+												<CustomState Name="" ID="{512DB557-C4F2-4CBB-AD65-37E5FD892AA6}" ShortID="475560640"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="BelowDeck" ID="{5467D0D7-2691-4EDB-B79A-7BB0B7257A0A}"/>
+												<CustomState Name="" ID="{C2260B40-B998-4CE3-BF92-CC31C02C1C83}" ShortID="1064845634">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-8"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="Sails" ID="{50474489-3EB1-4DA1-BD53-DBC29ED8E5B6}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -173,10 +194,36 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="AmbienceState" ID="{4F3CB971-6C62-4CFB-A196-52E03BD715F3}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="OnDeck" ID="{501206DC-FE9B-4171-97DB-163B04AF5C83}"/>
+												<CustomState Name="" ID="{1876242A-C465-4454-A5CB-77CA9A5AA01D}" ShortID="952936637"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="BelowDeck" ID="{5467D0D7-2691-4EDB-B79A-7BB0B7257A0A}"/>
+												<CustomState Name="" ID="{4C32494E-475E-4489-8EB6-E8F5D54A26FD}" ShortID="61782540">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-18"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</RandomSequenceContainer>
 								<Sound Name="WaveLoopsActual" ID="{F2AC9A80-84A2-4C32-8064-656F4E761004}" ShortID="232427332">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -195,12 +242,40 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="AmbienceState" ID="{4F3CB971-6C62-4CFB-A196-52E03BD715F3}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="OnDeck" ID="{501206DC-FE9B-4171-97DB-163B04AF5C83}"/>
+												<CustomState Name="" ID="{5C3C5040-769D-4691-B0C6-F9D27AC02314}" ShortID="690644091"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="BelowDeck" ID="{5467D0D7-2691-4EDB-B79A-7BB0B7257A0A}"/>
+												<CustomState Name="" ID="{47A6CE00-1E99-4F2B-BC62-81FC849530C4}" ShortID="1011289693">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="12"/>
+														<Property Name="Pitch" Type="int32" Value="-100"/>
+														<Property Name="Volume" Type="Real64" Value="6"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="WaveLoopsActual" ID="{8239386C-2CD6-4632-A825-88A58C6352B6}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="SailsLoop_2" ID="{0AFD6572-119C-461E-8B51-82B2EDEB09A0}" ShortID="133920789">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -225,15 +300,38 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="AmbienceState" ID="{4F3CB971-6C62-4CFB-A196-52E03BD715F3}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="OnDeck" ID="{501206DC-FE9B-4171-97DB-163B04AF5C83}"/>
+												<CustomState Name="" ID="{3315E3D1-F9A3-4CEA-9D58-14AFE51ED5D0}" ShortID="1033898675"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="BelowDeck" ID="{5467D0D7-2691-4EDB-B79A-7BB0B7257A0A}"/>
+												<CustomState Name="" ID="{FF51C40C-C123-4260-AAE4-745ADBD57D20}" ShortID="218216098">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-30"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="SailsLoop_2" ID="{17B5BE98-709E-482B-AABA-7C92AF4B337A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<RandomSequenceContainer Name="Woodsqueacks" ID="{1D64281B-CB4A-47E5-A8F6-6ABAA1A61D06}" ShortID="687514367">
 									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>-500</Value>
+												<Value>-730</Value>
 											</ValueList>
 										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
@@ -884,11 +982,1509 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{D5FBD036-2AB4-429F-836E-402770809559}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Woodsqueacks_Path" ID="{719D31B9-2AA0-4B99-B16B-8A02A1465B31}">
+													<PointList>
+														<Point>
+															<XPos>-24.8731</XPos>
+															<YPos>77.11864</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Woodsqueacks_Path_01" ID="{37082078-2EE9-48CB-B329-62C513790B76}">
+													<PointList>
+														<Point>
+															<XPos>27.91878</XPos>
+															<YPos>53.38983</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Woodsqueacks_Path_02" ID="{CAE19CB9-9143-41A4-9DD9-B50004F604C8}">
+													<PointList>
+														<Point>
+															<XPos>-19.28934</XPos>
+															<YPos>-13.27684</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Woodsqueacks_Path_03" ID="{E0E1A309-CA3E-4341-A2EB-979CEFD6A9AB}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="25"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>37.56345</XPos>
+															<YPos>-22.31638</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Bottles" ID="{8115F343-C941-47E0-92ED-0FB027CEA7BC}" ShortID="371655062">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>9</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="New Silence" ID="{E7CE3BC9-DFED-49DA-BBDF-7DF06A72A46A}" ShortID="517733557">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>74</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Silence" ID="{55DEA9E4-D5B1-4B0E-AFA6-39DEC2ADA2E9}" ShortID="372705211" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="3"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Silence" ID="{55DEA9E4-D5B1-4B0E-AFA6-39DEC2ADA2E9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="New Silence_01" ID="{6D51A172-F0B1-4B67-9BD0-8DCDD0CA5600}" ShortID="358852767">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>81</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Silence" ID="{89CD33BF-5BF4-4550-873A-ECD4CA0423AF}" ShortID="290880543" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="1.5"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Silence" ID="{89CD33BF-5BF4-4550-873A-ECD4CA0423AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="New Silence_02" ID="{64DD1A83-9D37-4977-A792-2063C7AD2A7A}" ShortID="879407530">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>96</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Silence" ID="{63B9E1EF-6D30-4CC2-8B53-DC4E5F39E80F}" ShortID="60256384" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Silence" ID="{63B9E1EF-6D30-4CC2-8B53-DC4E5F39E80F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="bottles_1" ID="{85144CC5-BAB5-4D3D-970E-F2D5A7D26932}" ShortID="456883202">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>18</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bottles_1" ID="{E656A893-313F-4BDD-85B7-BB7A9590FBF8}">
+													<Language>SFX</Language>
+													<AudioFile>bottles_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="991800915"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bottles_1" ID="{E656A893-313F-4BDD-85B7-BB7A9590FBF8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="bottles_2" ID="{DF4E5443-0B47-459B-A73B-301D0C55876E}" ShortID="686128422">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>18</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bottles_2" ID="{267EAF72-1421-498D-BF11-8AC5CE904051}">
+													<Language>SFX</Language>
+													<AudioFile>bottles_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="549785139"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bottles_2" ID="{267EAF72-1421-498D-BF11-8AC5CE904051}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="bottles_3" ID="{63E5C7FC-ECAE-4BBA-ADE7-04D71F1B8B15}" ShortID="917984693">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>15</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bottles_3" ID="{499CC5FB-429A-4CE8-901D-EBE763749E38}">
+													<Language>SFX</Language>
+													<AudioFile>bottles_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="100641892"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bottles_3" ID="{499CC5FB-429A-4CE8-901D-EBE763749E38}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="bottles_4" ID="{9DF5EE7F-EC31-4DF8-B722-4A75B37B8C8E}" ShortID="806367368">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>19</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bottles_4" ID="{8F13B5D8-9885-4F37-B7AE-6016CA49CD1D}">
+													<Language>SFX</Language>
+													<AudioFile>bottles_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="173734148"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bottles_4" ID="{8F13B5D8-9885-4F37-B7AE-6016CA49CD1D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="bottles_5" ID="{AE3C5322-1F54-42DC-9633-05ECF2E38B76}" ShortID="967132989">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>19</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bottles_5" ID="{32C03A68-13C5-43A9-AFF8-557620200832}">
+													<Language>SFX</Language>
+													<AudioFile>bottles_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="685091988"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bottles_5" ID="{32C03A68-13C5-43A9-AFF8-557620200832}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="bottles_6" ID="{3C168EFC-434B-4415-B93F-10F31DA3EDA4}" ShortID="192790511">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>19</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bottles_6" ID="{E84F6A86-ABB4-4F15-8FF8-8308D80C4E7C}">
+													<Language>SFX</Language>
+													<AudioFile>bottles_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="338182446"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bottles_6" ID="{E84F6A86-ABB4-4F15-8FF8-8308D80C4E7C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="bottles_7" ID="{12CFE58B-D991-4DF2-BBA8-03A63BFCA873}" ShortID="966662705">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>20</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bottles_7" ID="{0F08671F-F226-45F1-8057-FADCAA900C9F}">
+													<Language>SFX</Language>
+													<AudioFile>bottles_7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="747843737"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bottles_7" ID="{0F08671F-F226-45F1-8057-FADCAA900C9F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="bottles_8" ID="{0460330B-BD3B-4216-AD93-7B8651E9945C}" ShortID="174067657">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>20</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bottles_8" ID="{D09B9409-85F9-44EB-A053-459901793F92}">
+													<Language>SFX</Language>
+													<AudioFile>bottles_8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="960299649"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bottles_8" ID="{D09B9409-85F9-44EB-A053-459901793F92}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="bottles_9" ID="{A1DE4953-1FA6-4C5B-84CE-7691F2839BD5}" ShortID="877257804">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>19</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bottles_9" ID="{1A865F6E-11FE-40FC-9123-4CF8A4C096C7}">
+													<Language>SFX</Language>
+													<AudioFile>bottles_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="19808381"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bottles_9" ID="{1A865F6E-11FE-40FC-9123-4CF8A4C096C7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="bottles_10" ID="{F5AAAA33-0783-4B4D-ACD7-E87AD201D276}" ShortID="1235519">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>19</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bottles_10" ID="{F6A5FB93-5B1F-4236-95CA-66599954B252}">
+													<Language>SFX</Language>
+													<AudioFile>bottles_10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="510228530"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bottles_10" ID="{F6A5FB93-5B1F-4236-95CA-66599954B252}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{CF13F9D4-0194-4EB3-B4F0-0F84D1C516FA}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Bottles_Path" ID="{811CA214-FAD3-4252-BA75-8A1734378D99}">
+													<PointList>
+														<Point>
+															<XPos>48.22335</XPos>
+															<YPos>63.55932</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Bottles_Path_01" ID="{08A40E82-831B-4C35-ADD3-B944E5CA2198}">
+													<PointList>
+														<Point>
+															<XPos>-54.31472</XPos>
+															<YPos>-20.62147</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Bottles_Path_02" ID="{314B7DAC-2F05-4B30-8B27-6C0E704007AE}">
+													<PointList>
+														<Point>
+															<XPos>-42.13198</XPos>
+															<YPos>78.24859</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Bottles_Path_03" ID="{486AD17B-2DDE-4BAB-AA60-7597CE00B8AB}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="12"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>43.65482</XPos>
+															<YPos>-67.51412</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Bottles_Path_04" ID="{5C029FAF-A78B-4420-80E5-3448EC3E4AFA}">
+													<PointList>
+														<Point>
+															<XPos>1.01523</XPos>
+															<YPos>-77.11864</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="AmbienceState" ID="{4F3CB971-6C62-4CFB-A196-52E03BD715F3}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="OnDeck" ID="{501206DC-FE9B-4171-97DB-163B04AF5C83}"/>
+												<CustomState Name="" ID="{F0686354-2142-4634-A92E-8DF39DA31F40}" ShortID="852405489">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-39"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="BelowDeck" ID="{5467D0D7-2691-4EDB-B79A-7BB0B7257A0A}"/>
+												<CustomState Name="" ID="{4CBF9DD1-297A-4D9B-AF57-927B31FDA12F}" ShortID="141249508"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<PositioningInfo>
 								<Panner Name="" ID="{67AE8138-ECDA-47A2-B26E-ED9D3200183D}"/>
 							</PositioningInfo>
+						</BlendContainer>
+						<RandomSequenceContainer Name="WavesEmitter_1" ID="{8359FF98-34FB-4E95-B897-9B2D44AF159D}" ShortID="553309913">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="waves" ID="{D40F1504-FE50-46F2-9451-726B5DD6B2B1}" WorkUnitID="{022511B2-7203-410C-BA9D-9CCDD81DBDA6}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="wave_emitter_loop_1" ID="{37393028-4471-4E3E-BB4A-DBF7E4C0F0E7}" ShortID="306326347">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="wave_emitter_loop_1" ID="{F5ECC3FF-7A38-4752-84A5-F5E319CE97D5}">
+											<Language>SFX</Language>
+											<AudioFile>wave_emitter_loop_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="176280475"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="wave_emitter_loop_1" ID="{F5ECC3FF-7A38-4752-84A5-F5E319CE97D5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="WaveEmitter_2" ID="{05F2AAEF-85D2-4868-ACC6-35F6C76AF6A1}" ShortID="1037805842">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="waves" ID="{D40F1504-FE50-46F2-9451-726B5DD6B2B1}" WorkUnitID="{022511B2-7203-410C-BA9D-9CCDD81DBDA6}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="wave_emitter_loop_2" ID="{396463C6-0B6F-4CFE-8D48-BB52205F2E70}" ShortID="380749283">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="wave_emitter_loop_2" ID="{604E8BFC-E7FD-4D7D-AE04-B5EBE6E21E23}">
+											<Language>SFX</Language>
+											<AudioFile>wave_emitter_loop_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="920404243"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="wave_emitter_loop_2" ID="{604E8BFC-E7FD-4D7D-AE04-B5EBE6E21E23}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="MainCharacter" ID="{37683F4E-31E8-4770-A0BB-1FD20797E6A9}" ShortID="649975129">
+					<ChildrenList>
+						<BlendContainer Name="Steps" ID="{9A6A1D55-A9CB-4D20-B420-F60BA700D0DE}" ShortID="695780081">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Footsteps" ID="{9DDF34B7-6479-4478-86CC-B46F8146C032}" ShortID="409642046">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="footsteps_1" ID="{F00B8175-C9FB-4043-80A2-A4284F133A2F}" ShortID="889558271">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="footsteps_1" ID="{36E5DA3C-F749-4FDC-B07A-C7D1A71E5489}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0372575803252069"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>footsteps_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="556581480"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="footsteps_1" ID="{36E5DA3C-F749-4FDC-B07A-C7D1A71E5489}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="footsteps_2" ID="{709FE3C9-AD43-4D30-A635-D028B9458221}" ShortID="606780275">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="footsteps_2" ID="{5063A25F-6E0F-4253-B651-1A8CCE779CA9}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0317666266491035"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0317666266491035"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>footsteps_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="917477889"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="footsteps_2" ID="{5063A25F-6E0F-4253-B651-1A8CCE779CA9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="footsteps_3" ID="{B6A16A89-85F7-4E07-9892-61FFFC0F9287}" ShortID="478785071">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="footsteps_3" ID="{3D887A6E-9593-4967-9FB3-779D87586C16}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0208384384388677"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0182336336340093"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>footsteps_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="259768357"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="footsteps_3" ID="{3D887A6E-9593-4967-9FB3-779D87586C16}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="footsteps_4" ID="{B9AB5FA1-33EF-4ED1-AA64-CDB6672A4E9A}" ShortID="806754648">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="footsteps_4" ID="{6228B028-B827-4583-A06F-50B58AFF5141}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0180927232392203"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0180927232392203"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>footsteps_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="466772889"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="footsteps_4" ID="{6228B028-B827-4583-A06F-50B58AFF5141}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="footsteps_5" ID="{AF562A03-2A12-490C-BA75-884E6B9929C7}" ShortID="370071337">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="footsteps_5" ID="{4B8E7E67-7C18-427C-8616-6DACE6B4E49F}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0148210008103351"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0148210008103351"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>footsteps_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="618409209"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="footsteps_5" ID="{4B8E7E67-7C18-427C-8616-6DACE6B4E49F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="footsteps_6" ID="{F96761EE-76B1-4211-AE45-C0B452C5C4A5}" ShortID="506293863">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="footsteps_6" ID="{E9EEF3CD-E468-4791-A25D-750181747DE5}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0200309571640897"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0200309571640897"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>footsteps_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="925709984"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="footsteps_6" ID="{E9EEF3CD-E468-4791-A25D-750181747DE5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="footsteps_7" ID="{CB0C5A93-09E1-42C4-B964-B49E2CC54533}" ShortID="246826658">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="footsteps_7" ID="{6BE1F1CF-5311-471C-83FE-9D96CB86D3C0}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0199229973395058"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0199229973395058"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>footsteps_7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="297241481"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="footsteps_7" ID="{6BE1F1CF-5311-471C-83FE-9D96CB86D3C0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="footsteps_8" ID="{163A03BF-41C2-4549-ABE0-4985CE37B0D4}" ShortID="676193494">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="footsteps_8" ID="{76180F9D-8A5F-4B1A-9D5C-2F05B3EBC1D8}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0159974500508427"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0159974500508427"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>footsteps_8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1025225074"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="footsteps_8" ID="{76180F9D-8A5F-4B1A-9D5C-2F05B3EBC1D8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="footsteps_9" ID="{B335202E-BE78-4943-A779-334453E2F253}" ShortID="588068155">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="footsteps_9" ID="{7A621DFA-6161-4F8D-8B2D-967B66803D51}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0162586770652585"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0162586770652585"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>footsteps_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="974931646"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="footsteps_9" ID="{7A621DFA-6161-4F8D-8B2D-967B66803D51}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="footsteps_10" ID="{AC338068-1B81-47CB-AB07-F4A0A7DDEDD5}" ShortID="461224842">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="footsteps_10" ID="{1BDCA652-939B-4397-8BAD-90144B8883F8}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0246226418314655"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0246226418314655"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>footsteps_10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="131324714"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="footsteps_10" ID="{1BDCA652-939B-4397-8BAD-90144B8883F8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="footsteps_11" ID="{727AFF6B-362C-494E-ABF5-3F25D000A62C}" ShortID="1017353324">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="footsteps_11" ID="{15634ECD-5242-4A90-88F5-3AE7893BCF65}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0214459571852055"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0214459571852055"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>footsteps_11.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="522933961"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="footsteps_11" ID="{15634ECD-5242-4A90-88F5-3AE7893BCF65}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="footsteps_12" ID="{F39CEC98-902B-47E8-9DCC-A914CC2F77D0}" ShortID="186464402">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="footsteps_12" ID="{389B5AA9-BE17-456A-A395-6B1107034818}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0396136675407508"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0396136675407508"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>footsteps_12.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="119381897"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="footsteps_12" ID="{389B5AA9-BE17-456A-A395-6B1107034818}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Squeaks" ID="{C6D3AAD5-99CA-48A5-8862-F4BC59A7CDF6}" ShortID="243921106">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="WoodCreaks_1" ID="{89264BF9-8C97-4A10-BED0-C65D5949A47C}" ShortID="900073893">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4A2E57E0-0FD4-42EC-A1CA-27755E685F4A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																	<Property Name="Min" Type="Real64" Value="-325"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{106CAA65-6A45-4C3E-B69A-2CD43E4DD5C5}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodCreaks_1" ID="{34CDA829-CA9D-4DC5-802C-183031968A6F}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.148143668133715"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.148143668133715"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodCreaks_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="365921559"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodCreaks_1" ID="{34CDA829-CA9D-4DC5-802C-183031968A6F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WoodCreaks_2" ID="{FD15548C-A189-48AA-AD53-27E338268D7B}" ShortID="683411861">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{04235520-5065-4162-BD3B-348577D9D0F4}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="325"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A2FD3C71-0299-4DE4-811D-81CB80B37E3C}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodCreaks_2" ID="{D6C11757-B47D-4FF6-ACD4-4FE897A0AF98}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.16686073635094"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.16686073635094"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodCreaks_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="805003803"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodCreaks_2" ID="{D6C11757-B47D-4FF6-ACD4-4FE897A0AF98}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WoodCreaks_3" ID="{B0826692-C7CD-4232-AA94-652417644CC9}" ShortID="1027705787">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{323A7621-34A0-4D91-9591-F1D22CA1EE42}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="325"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F2685B9B-C74A-43B9-B5EA-1DCCE88C2F0E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodCreaks_3" ID="{090C6A29-5708-4D2E-A2A2-429886216BB0}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.174397320410034"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.174397320410034"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodCreaks_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="389080944"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodCreaks_3" ID="{090C6A29-5708-4D2E-A2A2-429886216BB0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WoodCreaks_4" ID="{525BECCB-A375-4265-A08E-0339BF1632B6}" ShortID="594543699">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E4FC0C3A-2E81-4B4E-AA18-29854431177F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="325"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3D1EBEE2-6D20-422C-B933-860FB1109CB6}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodCreaks_4" ID="{8AB369F5-1E18-4A5B-A011-97B942874AA3}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.280218354146749"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.280218354146749"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodCreaks_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="258870878"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodCreaks_4" ID="{8AB369F5-1E18-4A5B-A011-97B942874AA3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WoodCreaks_5" ID="{F22E6488-8366-46B0-BE4A-B9DD9786A847}" ShortID="466709561">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{49840885-D720-4E5E-851E-20AB5DFFDE7E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{CF0A85E2-AC76-45A4-8883-E0C0041E0E9A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-4"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodCreaks_5" ID="{14253D3F-E7C7-4DEE-B47D-951F40C5B5A5}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.171866038105456"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.171866038105456"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodCreaks_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="134403587"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodCreaks_5" ID="{14253D3F-E7C7-4DEE-B47D-951F40C5B5A5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WoodCreaks_6" ID="{F6F1652E-AD38-4883-9856-726D5D64E51C}" ShortID="541834220">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9F064488-9C11-4A71-B09A-F9C4E6005F27}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="325"/>
+																	<Property Name="Min" Type="Real64" Value="-350"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D19554F6-8763-4FAD-A5A9-9AE3BBF40644}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodCreaks_6" ID="{E460ADE0-92D6-49F3-9BBE-60E1543E4A66}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.318758090185161"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.318758090185161"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodCreaks_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="983802680"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodCreaks_6" ID="{E460ADE0-92D6-49F3-9BBE-60E1543E4A66}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WoodCreaks_7" ID="{173E755C-4A0C-4B02-AF7B-3787E3B57088}" ShortID="957952055">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{08C6A503-CB7A-4CBD-81C5-AD8B412A599F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="325"/>
+																	<Property Name="Min" Type="Real64" Value="-325"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{538D72C2-62E8-47B4-BB3E-B2781AC69F3C}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodCreaks_7" ID="{6619846D-2A56-4E8D-AC54-4E8C75195CEA}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.2027232537534"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.2027232537534"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodCreaks_7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="694523224"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodCreaks_7" ID="{6619846D-2A56-4E8D-AC54-4E8C75195CEA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WoodCreaks_8" ID="{818ABC56-C42B-4AD8-8333-63DDFA32FF78}" ShortID="351827446">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5E8BD7FE-5FBB-40E5-B026-43C1C8CAE683}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="325"/>
+																	<Property Name="Min" Type="Real64" Value="-325"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B639D56F-547F-4759-8C54-B587A2B95736}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodCreaks_8" ID="{C715D00C-E452-4618-BBD6-D3C28BC6DF2A}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.256685169431493"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.256685169431493"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodCreaks_8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="198760738"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodCreaks_8" ID="{C715D00C-E452-4618-BBD6-D3C28BC6DF2A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WoodCreaks_9" ID="{EA5035F1-23F7-49B5-9E61-0812B375D23F}" ShortID="817900958">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{79AC0D46-7777-4AB9-8D79-CDA21DEA5C32}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="325"/>
+																	<Property Name="Min" Type="Real64" Value="-375"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{35A49230-ACAA-49EA-9B58-13EE7FF9C085}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WoodCreaks_9" ID="{27B39E17-90FB-44F9-BBC8-06BF6DDA2491}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.251610414931697"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.251610414931697"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WoodCreaks_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="90986445"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WoodCreaks_9" ID="{27B39E17-90FB-44F9-BBC8-06BF6DDA2491}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{A33825C5-45FA-4D72-B000-BBE00E10A604}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
 				</Folder>

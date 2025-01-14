@@ -1,3 +1,11 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1686518004	AmbienceState			\Default Work Unit\AmbienceState	
+
+State	ID	Name	State Group			Notes
+	748895195	None	AmbienceState			
+	1043057783	BelowDeck	AmbienceState			
+	3894681889	OnDeck	AmbienceState			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	

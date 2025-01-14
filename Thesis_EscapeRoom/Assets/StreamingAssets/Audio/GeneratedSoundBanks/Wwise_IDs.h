@@ -14,8 +14,27 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID INGAMEMUSIC_PLAY = 2630200976U;
+        static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID SHIPAMBIENCE = 1423153471U;
+        static const AkUniqueID WAVEEMITTER_1 = 3193985440U;
+        static const AkUniqueID WAVEEMITTER_2 = 3193985443U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace AMBIENCESTATE
+        {
+            static const AkUniqueID GROUP = 1686518004U;
+
+            namespace STATE
+            {
+                static const AkUniqueID BELOWDECK = 1043057783U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID ONDECK = 3894681889U;
+            } // namespace STATE
+        } // namespace AMBIENCESTATE
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {
@@ -35,6 +54,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID CHARACTER = 436743010U;
         static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BANKS
 

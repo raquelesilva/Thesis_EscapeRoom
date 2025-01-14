@@ -8,6 +8,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using AK.Wwise;
+
 
 
 #if UNITY_EDITOR
@@ -63,9 +65,16 @@ public class FirstPersonController : MonoBehaviour
     public float walkSpeed = 5f;
     public float maxVelocityChange = 10f;
 
+    public AK.Wwise.Event myFootstep;
+
+
     // Internal Variables
     private bool isWalking = false;
     private Vector2 move;
+
+    //Wwise
+    private bool footstepIsPlaying = false;
+    private float lastFootstepTime = 0;
 
     #region Sprint
 
@@ -147,6 +156,8 @@ public class FirstPersonController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         crosshairObject = GetComponentInChildren<Image>();
+
+        lastFootstepTime = Time.time;
 
         // Set internal variables
         playerCamera.fieldOfView = fov;
@@ -390,11 +401,30 @@ public class FirstPersonController : MonoBehaviour
             if (targetVelocity.x != 0 || targetVelocity.z != 0)
             {
                 isWalking = true;
+                if (!footstepIsPlaying)
+                {
+                    PlayFootstepEvent();
+                    lastFootstepTime = Time.time;
+                    footstepIsPlaying = true;
+
+                }
+                else
+                {
+                    if (walkSpeed > 1)
+                    {
+                        if (Time.time - lastFootstepTime > 150 / walkSpeed * Time.deltaTime)
+                        {
+                            footstepIsPlaying = false;
+                        }
+                    }
+                    
+                }
             }
             else
             {
                 isWalking = false;
             }
+            
 
             // All movement calculations shile sprint is active
             if (enableSprint && playerMovement.Movement.Sprint.IsPressed() && sprintRemaining > 0f && !isSprintCooldown)
@@ -452,6 +482,12 @@ public class FirstPersonController : MonoBehaviour
 
         #endregion
     }
+
+    public void PlayFootstepEvent()
+    {
+        AkSoundEngine.PostEvent("Play_Footsteps", gameObject);
+    }
+
 
     public void SetPause(bool isPaused)
     {
@@ -660,6 +696,15 @@ public class FirstPersonControllerEditor : Editor
         GUI.enabled = fpc.playerCanMove;
         fpc.walkSpeed = EditorGUILayout.Slider(new GUIContent("Walk Speed", "Determines how fast the player will move while walking."), fpc.walkSpeed, .1f, fpc.sprintSpeed);
         GUI.enabled = true;
+
+
+
+    
+
+
+
+
+
 
         EditorGUILayout.Space();
 
