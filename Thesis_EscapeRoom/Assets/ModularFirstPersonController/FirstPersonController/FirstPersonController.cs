@@ -65,7 +65,7 @@ public class FirstPersonController : MonoBehaviour
     public float walkSpeed = 5f;
     public float maxVelocityChange = 10f;
 
-    public AK.Wwise.Event myFootstep;
+    
 
 
     // Internal Variables
@@ -75,6 +75,8 @@ public class FirstPersonController : MonoBehaviour
     //Wwise
     private bool footstepIsPlaying = false;
     private float lastFootstepTime = 0;
+    private bool jumpIsPlaying = false;
+    private bool isJumping = false;
 
     #region Sprint
 
@@ -401,7 +403,7 @@ public class FirstPersonController : MonoBehaviour
             if (targetVelocity.x != 0 || targetVelocity.z != 0)
             {
                 isWalking = true;
-                if (!footstepIsPlaying)
+                if (!footstepIsPlaying && !isJumping)
                 {
                     PlayFootstepEvent();
                     lastFootstepTime = Time.time;
@@ -488,6 +490,11 @@ public class FirstPersonController : MonoBehaviour
         AkSoundEngine.PostEvent("Play_Footsteps", gameObject);
     }
 
+    public void PlayJumpEvent()
+    {
+        AkSoundEngine.PostEvent("Play_jump", gameObject);
+    }
+
 
     public void SetPause(bool isPaused)
     {
@@ -515,11 +522,25 @@ public class FirstPersonController : MonoBehaviour
         {
             Debug.DrawRay(origin, direction * distance, Color.green);
             isGrounded = true;
-        }
+            if (isJumping)
+            {
+                PlayJumpEvent();
+                
+            }
+            isJumping = false;
+            
+
+         
+         
+
+            }
+            
+        
         else
         {
             Debug.DrawRay(origin, direction * distance, Color.red);
             isGrounded = false;
+            isJumping = true;
         }
     }
 
@@ -531,6 +552,8 @@ public class FirstPersonController : MonoBehaviour
             Debug.Log("IsGrounded");
             rb.AddForce(0f, jumpPower, 0f, ForceMode.Impulse);
             isGrounded = false;
+            isJumping = true;
+
         }
 
         // When crouched and using toggle system, will uncrouch for a jump

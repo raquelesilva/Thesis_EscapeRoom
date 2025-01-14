@@ -1,7 +1,13 @@
 Event	ID	Name			Wwise Object Path	Notes
+	3689126666	Play_jump			\Default Work Unit\Charactert\Play_jump	
 	3854155799	Play_Footsteps			\Default Work Unit\Charactert\Play_Footsteps	
+	3978245845	PickUp			\Default Work Unit\Charactert\PickUp	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	30233752	pickUpSound	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\25\{25F89831-F182-1FEC-DBAF-A2C67125ACCC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainCharacter\GetPiece\pickUpSound		20128
 	90986445	WoodCreaks_9	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\D9\{D9108510-89DA-2ABB-816D-B1FBF679CC97}.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainCharacter\Steps\Squeaks\WoodCreaks_9		192838
 	119381897	footsteps_12	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\F9\{F9CB04C7-AF93-FFF9-C809-42B27170ECCB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainCharacter\Steps\Footsteps\footsteps_12		32084
 	131324714	footsteps_10	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\AF\{AF372D90-7070-7A2E-AB60-61682D055AE4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainCharacter\Steps\Footsteps\footsteps_10		33418

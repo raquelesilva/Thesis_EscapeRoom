@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1f50a62127bee343bb0c6a99c04d67f4
     GuidInternal: 
-    m_lastTime: -8584647610742016542
+    m_lastTime: -8584647328691728114
     List:
     - name: Ambience
       guid: 3ff4e9aa69563a488a34f525fec9de8f
@@ -387,7 +387,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5a6816154c16e34f97734d5caeec72e2
     GuidInternal: 
-    m_lastTime: -8584647610742036519
+    m_lastTime: -8584647328691748128
     List:
     - name: Ambience
       guid: 309885b71fc2074c8c937568c52da7bb
@@ -460,6 +460,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: PickUp
+      guid: 0d0abe559d5b8a4aa79a6e81da564653
+      id: 3978245845
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5a6816154c16e34f97734d5caeec72e2
+      - ElementName: Charactert
+        ObjectType: 4
+        guid: 3af0a1ea50d9954f88816bf4a310cacd
+      - ElementName: PickUp
+        ObjectType: 3
+        guid: 0d0abe559d5b8a4aa79a6e81da564653
+      Path: Events\Default Work Unit\Charactert\PickUp
+      maxAttenuation: 0
+      maxDuration: 0.22712018
+      minDuration: 0.22712018
     - name: Play_Footsteps
       guid: 6ef570924048b94b8915ab087060b472
       id: 3854155799
@@ -480,6 +500,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.7138107
       minDuration: 1.0283345
+    - name: Play_jump
+      guid: 8d06966167229c4ab712da0339a02210
+      id: 3689126666
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5a6816154c16e34f97734d5caeec72e2
+      - ElementName: Charactert
+        ObjectType: 4
+        guid: 3af0a1ea50d9954f88816bf4a310cacd
+      - ElementName: Play_jump
+        ObjectType: 3
+        guid: 8d06966167229c4ab712da0339a02210
+      Path: Events\Default Work Unit\Charactert\Play_jump
+      maxAttenuation: 0
+      maxDuration: 0.4865207
+      minDuration: 0.46202067
     - name: ShipAmbience
       guid: 900d9668d2b312408655c934c67b980b
       id: 1423153471
@@ -517,7 +557,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: fa078aa81b82da44904c9792a79ee71e
       Path: Events\Default Work Unit\Ambience\WaveEmitter_1
-      maxAttenuation: 15
+      maxAttenuation: 20
       maxDuration: 0
       minDuration: 0
     - name: WaveEmitter_2
@@ -537,7 +577,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b7438659da7d9541998e024010bb7b8a
       Path: Events\Default Work Unit\Ambience\WaveEmitter_2
-      maxAttenuation: 15
+      maxAttenuation: 20
       maxDuration: 71.42519
       minDuration: 71.42519
   RtpcWwu:

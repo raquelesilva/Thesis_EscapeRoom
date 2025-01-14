@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{588DA9AC-60AE-4822-B457-989DD72A8830}",
     "Language": "SFX",
-    "Hash": "{E2518F70-5AEA-0408-3C26-39AE59397435}",
+    "Hash": "{3E18DC16-0949-ED00-5FCC-67ED71FE0DA8}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Character",
     "ShortName": "Character",
     "Path": "Character.bnk",
     "Media": [
+     {
+      "Id": "30233752",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "pickUpSound.wav",
+      "CachePath": "25/{25F89831-F182-1FEC-DBAF-A2C67125ACCC}.wem"
+     },
      {
       "Id": "90986445",
       "Language": "SFX",
@@ -184,7 +192,33 @@
       "CachePath": "2D/{2D47C4C1-7797-C4C6-E776-9C81AC84F778}.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "1008402193",
+       "Name": "Low_Pass_20KHz",
+       "ObjectPath": "\\Effects\\Factory Effects\\Parametric EQ\\Low Pass Filters\\Low_Pass_20KHz",
+       "GUID": "{830124FB-B9D5-4AE8-846E-E94A74652666}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
     "Events": [
+     {
+      "Id": "3978245845",
+      "Name": "PickUp",
+      "ObjectPath": "\\Events\\Default Work Unit\\Charactert\\PickUp",
+      "GUID": "{55BE0A0D-5B9D-4A8A-A79A-6E81DA564653}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.22712018",
+      "DurationMax": "0.22712018",
+      "MediaRefs": [
+       {
+        "Id": "30233752"
+       }
+      ]
+     },
      {
       "Id": "3854155799",
       "Name": "Play_Footsteps",
@@ -258,10 +292,34 @@
         "Id": "1025225074"
        }
       ]
+     },
+     {
+      "Id": "3689126666",
+      "Name": "Play_jump",
+      "ObjectPath": "\\Events\\Default Work Unit\\Charactert\\Play_jump",
+      "GUID": "{6196068D-2267-4A9C-B712-DA0339A02210}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.46202067",
+      "DurationMax": "0.4865207",
+      "MediaRefs": [
+       {
+        "Id": "466772889"
+       },
+       {
+        "Id": "917477889"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1008402193"
+        }
+       ]
+      }
      }
     ]
    }
   ],
-  "FileHash": "{7989838B-43FD-6B39-B0B9-CC7E5204DF7E}"
+  "FileHash": "{642CF8CB-0540-E530-7AF4-32140A05E3E7}"
  }
 }

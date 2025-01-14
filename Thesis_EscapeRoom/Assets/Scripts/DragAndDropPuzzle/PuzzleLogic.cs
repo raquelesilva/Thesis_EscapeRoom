@@ -37,6 +37,8 @@ namespace Unity.FantasyKingdom
         [SerializeField] Vector3 _puzzleInitialPosition;
         [SerializeField] DepthOfField _depthOfField;
 
+        public AK.Wwise.Event MyEvent;
+
         private void Awake()
         {
             enabled = true;
@@ -73,6 +75,8 @@ namespace Unity.FantasyKingdom
             Debug.Log("GetPiece");
             catchedPieces++;
             piece.SetActive(false);
+
+            MyEvent.Post(gameObject);
 
             if (catchedPieces == numPieces)
             {

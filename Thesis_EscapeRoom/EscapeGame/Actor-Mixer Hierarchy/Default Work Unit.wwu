@@ -327,7 +327,6 @@
 								</Sound>
 								<RandomSequenceContainer Name="Woodsqueacks" ID="{1D64281B-CB4A-47E5-A8F6-6ABAA1A61D06}" ShortID="687514367">
 									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
@@ -1052,7 +1051,7 @@
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1447,8 +1446,8 @@
 												<Path2D Name="Bottles_Path" ID="{811CA214-FAD3-4252-BA75-8A1734378D99}">
 													<PointList>
 														<Point>
-															<XPos>48.22335</XPos>
-															<YPos>63.55932</YPos>
+															<XPos>35.02538</XPos>
+															<YPos>25.70621</YPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
@@ -1457,8 +1456,8 @@
 												<Path2D Name="Bottles_Path_01" ID="{08A40E82-831B-4C35-ADD3-B944E5CA2198}">
 													<PointList>
 														<Point>
-															<XPos>-54.31472</XPos>
-															<YPos>-20.62147</YPos>
+															<XPos>-28.93401</XPos>
+															<YPos>-12.14689</YPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
@@ -1467,8 +1466,8 @@
 												<Path2D Name="Bottles_Path_02" ID="{314B7DAC-2F05-4B30-8B27-6C0E704007AE}">
 													<PointList>
 														<Point>
-															<XPos>-42.13198</XPos>
-															<YPos>78.24859</YPos>
+															<XPos>-15.73604</XPos>
+															<YPos>74.85876</YPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
@@ -1480,14 +1479,17 @@
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>43.65482</XPos>
-															<YPos>-67.51412</YPos>
+															<XPos>27.41117</XPos>
+															<YPos>-69.20904</YPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
 													</PointList>
 												</Path2D>
 												<Path2D Name="Bottles_Path_04" ID="{5C029FAF-A78B-4420-80E5-3448EC3E4AFA}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="14"/>
+													</PropertyList>
 													<PointList>
 														<Point>
 															<XPos>1.01523</XPos>
@@ -1534,7 +1536,7 @@
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>3</Value>
+										<Value>5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1579,7 +1581,7 @@
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>3</Value>
+										<Value>5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1624,6 +1626,13 @@
 				<Folder Name="MainCharacter" ID="{37683F4E-31E8-4770-A0BB-1FD20797E6A9}" ShortID="649975129">
 					<ChildrenList>
 						<BlendContainer Name="Steps" ID="{9A6A1D55-A9CB-4D20-B420-F60BA700D0DE}" ShortID="695780081">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
@@ -2485,6 +2494,197 @@
 									</PositioningInfo>
 								</RandomSequenceContainer>
 							</ChildrenList>
+						</BlendContainer>
+						<RandomSequenceContainer Name="GetPiece" ID="{5B38D077-2DEB-4711-90CA-86A796D5024E}" ShortID="503502661">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="pickUpSound" ID="{8803D532-DB61-421C-8919-AFF58D9130DC}" ShortID="850767576">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pickUpSound" ID="{7074C8AE-37C7-4B30-AE6B-9388266D4404}">
+											<Language>SFX</Language>
+											<AudioFile>pickUpSound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="30233752"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pickUpSound" ID="{7074C8AE-37C7-4B30-AE6B-9388266D4404}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<BlendContainer Name="Jump" ID="{D26C1926-0F3D-496A-B45F-26033378C93D}" ShortID="206891935">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="footsteps_2" ID="{4F924338-459B-4A5B-B3CC-1FD9757ED311}" ShortID="1067093869">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{43046663-06D9-4EF9-A0FE-4AF34ED635B5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{09AF0C1A-EDDB-4C2B-9860-77F2D0D1062F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="6"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="footsteps_2" ID="{DB87DBFA-4526-4300-98AA-7CA33A02F0AC}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0317666266491035"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0317666266491035"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>footsteps_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="917477889"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="footsteps_2" ID="{DB87DBFA-4526-4300-98AA-7CA33A02F0AC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="footsteps_4" ID="{AFAB9548-4315-46BE-9E45-647950CB25FA}" ShortID="1072197389">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.05</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>24</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B85F9CF4-C2B4-4C4C-9D5D-CCD1F8ACB7F9}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{545F90E1-DAA3-451B-A1D4-234FF5A4E075}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="7"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24471A92-B8BB-479A-B2E4-59699328CB29}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9CD6A97E-4EC3-4FF9-B90E-9296539AEDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="footsteps_4" ID="{CCEDF3E2-A9B4-48C0-BA3F-714314297AF3}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0180927232392203"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0180927232392203"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>footsteps_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="466772889"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="footsteps_4" ID="{CCEDF3E2-A9B4-48C0-BA3F-714314297AF3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{112052DF-A8D7-4117-9DF4-5126BB6CF974}" ShortID="1044587689">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 						</BlendContainer>
 					</ChildrenList>
 				</Folder>

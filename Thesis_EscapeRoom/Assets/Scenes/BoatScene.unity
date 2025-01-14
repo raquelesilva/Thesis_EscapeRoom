@@ -4162,6 +4162,10 @@ MonoBehaviour:
   _piecesAligned: 0
   _puzzleInitialPosition: {x: 0, y: 0, z: 0}
   _depthOfField: {fileID: 0}
+  MyEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 09659ead95ef60946a2529736d1d2a2f, type: 2}
 --- !u!4 &1068892725
 Transform:
   m_ObjectHideFlags: 0

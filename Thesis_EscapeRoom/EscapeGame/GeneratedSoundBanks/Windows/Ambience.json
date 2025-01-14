@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AAE9F43F-5669-483A-8A34-F525FEC9DE8F}",
     "Language": "SFX",
-    "Hash": "{9C1D6884-63A5-ADF1-9D02-9D6DD09BD3D3}",
+    "Hash": "{D1920CC2-AC1F-9DA4-205F-EFB8787D9FCD}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -418,7 +418,7 @@
       "Name": "WaveEmitter_1",
       "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\WaveEmitter_1",
       "GUID": "{A88A07FA-821B-44DA-904C-9792A79EE71E}",
-      "MaxAttenuation": "15",
+      "MaxAttenuation": "20",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -431,7 +431,7 @@
       "Name": "WaveEmitter_2",
       "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\WaveEmitter_2",
       "GUID": "{598643B7-7DDA-4195-998E-024010BB7B8A}",
-      "MaxAttenuation": "15",
+      "MaxAttenuation": "20",
       "DurationType": "OneShot",
       "DurationMin": "71.42519",
       "DurationMax": "71.42519",
@@ -444,6 +444,6 @@
     ]
    }
   ],
-  "FileHash": "{74A7932C-88C9-5A11-CA03-2EA04E30F628}"
+  "FileHash": "{52FE6D5E-D900-2DA2-564D-687E93BC4893}"
  }
 }
