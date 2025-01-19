@@ -22,7 +22,7 @@ public class OpenAICompanion : MonoBehaviour
             model = "gpt-4",
             messages = new[]
             {
-                new { role = "system", content = "És um tutor num jogo. Dá dicas em vez de respostas." },
+                new { role = "system", content = "És um tutor num jogo da descobreta do caminho para a india. Dá dicas somente sobre este tema e em vez de respostas." },
                 new { role = "user", content = message }
             }
         };
