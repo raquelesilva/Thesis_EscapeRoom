@@ -450,7 +450,7 @@ Transform:
   m_GameObject: {fileID: 33172604}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.73350626, z: -0, w: -0.6796827}
-  m_LocalPosition: {x: 10.97, y: 6.325, z: -1.36}
+  m_LocalPosition: {x: 10.757, y: 5.78, z: -1.312}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -719,7 +719,7 @@ Transform:
   m_GameObject: {fileID: 36391787}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.58, y: 0.06, z: -8.54}
+  m_LocalPosition: {x: -3.11, y: -0.533, z: -12.18}
   m_LocalScale: {x: 1, y: 0.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1320,7 +1320,7 @@ MonoBehaviour:
   target: {fileID: 256755875}
   positionThreshold: 0.05
   rotationThreshold: 3
-  puzzleLogic: {fileID: 0}
+  puzzleLogic: {fileID: 1068892724}
 --- !u!1 &195286010
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,6 +1688,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 30
+--- !u!1001 &281174979
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1554003223039306573, guid: 7bf4a5ca4c077214085554f9df92137d, type: 3}
+      propertyPath: m_Name
+      value: Boat_CellShaded
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223438040962019831, guid: 7bf4a5ca4c077214085554f9df92137d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223438040962019831, guid: 7bf4a5ca4c077214085554f9df92137d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223438040962019831, guid: 7bf4a5ca4c077214085554f9df92137d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223438040962019831, guid: 7bf4a5ca4c077214085554f9df92137d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223438040962019831, guid: 7bf4a5ca4c077214085554f9df92137d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223438040962019831, guid: 7bf4a5ca4c077214085554f9df92137d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223438040962019831, guid: 7bf4a5ca4c077214085554f9df92137d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223438040962019831, guid: 7bf4a5ca4c077214085554f9df92137d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223438040962019831, guid: 7bf4a5ca4c077214085554f9df92137d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223438040962019831, guid: 7bf4a5ca4c077214085554f9df92137d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7bf4a5ca4c077214085554f9df92137d, type: 3}
 --- !u!1 &344399877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,7 +1895,7 @@ GameObject:
   - component: {fileID: 350572621}
   - component: {fileID: 350572620}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: PuzzleCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2228,7 +2285,7 @@ Transform:
   m_GameObject: {fileID: 451327209}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.37599972, z: 0.431}
+  m_LocalPosition: {x: 0, y: -0.554, z: 0.431}
   m_LocalScale: {x: 1, y: 0.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2311,7 +2368,7 @@ Transform:
   m_GameObject: {fileID: 453698731}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.22, y: -0.5139997, z: 2.56}
+  m_LocalPosition: {x: -6.22, y: -0.558, z: 2.56}
   m_LocalScale: {x: 1, y: 0.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3512,7 +3569,7 @@ Transform:
   m_GameObject: {fileID: 828016845}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6149759, y: -1.0794635, z: 1.0169239}
+  m_LocalPosition: {x: -0.05, y: -1.0794635, z: 1.91}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -4192,11 +4249,11 @@ MonoBehaviour:
   poemDialogue: {fileID: 4900000, guid: b7f60734858329245829ed1a01cce5e2, type: 3}
   assembleDialogue: {fileID: 4900000, guid: 0897c47c7d960c645b8d9e6c07eadfa3, type: 3}
   playerGO: {fileID: 629068839468893791}
-  puzzleCamera: {fileID: 0}
+  puzzleCamera: {fileID: 350572618}
   catchedPieces: 0
   findPiecesGO: {fileID: 1224373353}
   puzzleParent: {fileID: 828016847}
-  cameraTransform: {fileID: 0}
+  cameraTransform: {fileID: 350572619}
   moveSpeed: 3
   focusOffset: 0.82
   postProcessingVolume: {fileID: 0}
@@ -4219,7 +4276,7 @@ Transform:
   m_GameObject: {fileID: 1068892723}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.991024, y: 7.8254633, z: -6.376924}
+  m_LocalPosition: {x: 9.991024, y: 7.3, z: -6.376924}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4306,7 +4363,7 @@ MonoBehaviour:
   target: {fileID: 256755873}
   positionThreshold: 0.03
   rotationThreshold: 3
-  puzzleLogic: {fileID: 0}
+  puzzleLogic: {fileID: 1068892724}
 --- !u!64 &1248852995
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5147,7 +5204,7 @@ Transform:
   m_GameObject: {fileID: 1415162917}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.72, y: -0.32199973, z: 24.982}
+  m_LocalPosition: {x: -2.72, y: -0.54, z: 21.03}
   m_LocalScale: {x: 1, y: 0.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5854,7 +5911,7 @@ MonoBehaviour:
   target: {fileID: 256755872}
   positionThreshold: 0.03
   rotationThreshold: 3
-  puzzleLogic: {fileID: 0}
+  puzzleLogic: {fileID: 1068892724}
 --- !u!114 &1486964842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5870,7 +5927,7 @@ MonoBehaviour:
   target: {fileID: 256755874}
   positionThreshold: 0.03
   rotationThreshold: 3
-  puzzleLogic: {fileID: 0}
+  puzzleLogic: {fileID: 1068892724}
 --- !u!64 &1486964843
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5942,7 +5999,7 @@ Transform:
   m_GameObject: {fileID: 1543984892}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.87, y: -0.33999974, z: -1.304}
+  m_LocalPosition: {x: -6.167, y: -0.584, z: -5.337}
   m_LocalScale: {x: 1, y: 0.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6352,7 +6409,7 @@ Transform:
   m_GameObject: {fileID: 1620852256}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.072, y: -0.5879997, z: 8.869}
+  m_LocalPosition: {x: -5.984, y: -0.5879997, z: 8.869}
   m_LocalScale: {x: 1, y: 0.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8724,7 +8781,7 @@ Transform:
   m_GameObject: {fileID: 2083568933}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6, y: -0.16099973, z: -4.973}
+  m_LocalPosition: {x: 0.6, y: -0.576, z: -4.973}
   m_LocalScale: {x: 1, y: 0.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14311,7 +14368,7 @@ Transform:
   m_GameObject: {fileID: 629068839468893791}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.16, y: 10.268, z: -6.911}
+  m_LocalPosition: {x: 7.39, y: 14.753, z: -11.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14365,7 +14422,7 @@ MonoBehaviour:
   cameraCanMove: 1
   mouseSensitivity: 2
   maxLookAngle: 85
-  lockCursor: 0
+  lockCursor: 1
   crosshair: 1
   crosshairImage: {fileID: 21300000, guid: be4ce60e2c9768c44b9b10b9c5258045, type: 3}
   crosshairColor: {r: 1, g: 1, b: 1, a: 1}
@@ -19138,7 +19195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &1370257906566334632
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -79374,3 +79431,4 @@ SceneRoots:
   - {fileID: 1446706160}
   - {fileID: 1068892725}
   - {fileID: 1430914020}
+  - {fileID: 281174979}

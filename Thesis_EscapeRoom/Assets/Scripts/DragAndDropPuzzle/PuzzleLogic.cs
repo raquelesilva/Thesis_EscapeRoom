@@ -41,19 +41,8 @@ namespace Unity.FantasyKingdom
 
         private void Awake()
         {
-            enabled = true;
             findPiecesGO.SetActive(true);
             puzzleParent.gameObject.SetActive(false);
-
-            if (puzzleCamera == null)
-            {
-                puzzleCamera = GetComponentInChildren<Camera>(true).gameObject;
-            }
-
-            if (playerGO != null)
-            {
-                playerGO = FirstPersonController.instance.gameObject;
-            }
         }
 
         private void Start()
@@ -72,7 +61,6 @@ namespace Unity.FantasyKingdom
 
         public void GetOnePiece(GameObject piece)
         {
-            Debug.Log("GetPiece");
             catchedPieces++;
             piece.SetActive(false);
 
@@ -80,6 +68,8 @@ namespace Unity.FantasyKingdom
 
             if (catchedPieces == numPieces)
             {
+                playerGO.GetComponent<FirstPersonController>().SetPause(true);
+
                 findPiecesGO.SetActive(false);
                 puzzleParent.gameObject.SetActive(true);
                 dialogueTrigger.ChangeDialogue(assembleDialogue);
