@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.Networking;
 using Newtonsoft.Json;
 using Unity.FantasyKingdom;
+using Newtonsoft.Json.Linq;
 
 public class OpenAICompanion : MonoBehaviour
 {
-    private string apiKey = "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\r\n";
+    private string apiKey = "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\r\n".Trim();
     private string OLDapiKey = "sk - proj - _XxAWUWUTd11gpd4mUdfg0iEf_OQotdFQXWAuHIjBeigJqxiqnulJwA6rdsxcANv7E5ZPU6ucdT3BlbkFJqnS - GkFq5o96H7i8cr4cb0Y2zNf0iTuP7T4NNWph66wL - Yzen1ot9K18WFtRh6z0sM - OGiK2EA\r\n";
     private string apiUrl = "https://api.openai.com/v1/chat/completions";
 
@@ -53,8 +54,13 @@ public class OpenAICompanion : MonoBehaviour
 
         if (request.result == UnityWebRequest.Result.Success)
         {
-            Debug.Log("Resposta da IA: " + request.downloadHandler.text);
-            AdamastorManager.instance.RecieveMessage(request.downloadHandler.text);
+            // Parse the response and extract the AI's answer
+            string jsonResponse = request.downloadHandler.text;
+            JObject parsedResponse = JObject.Parse(jsonResponse);
+            string aiResponse = parsedResponse["choices"]?[0]?["message"]?["content"]?.ToString();
+
+            Debug.Log("Resposta da IA: " + aiResponse);
+            AdamastorManager.instance.RecieveMessage(aiResponse);
         }
         else
         {
