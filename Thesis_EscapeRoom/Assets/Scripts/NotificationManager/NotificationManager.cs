@@ -17,6 +17,9 @@ namespace CoreSystems.Managers
 
 		// ### Referência do objeto da janela
 		[SerializeField] Transform window = null;
+		[SerializeField] Sprite winWindow = null;
+		[SerializeField] Sprite loseWindow = null;
+		[SerializeField] Sprite infoWindow = null;
 
 		// ### Referência do objeto que terá mensagem
 		[SerializeField] TextMeshProUGUI message = null;
@@ -36,13 +39,27 @@ namespace CoreSystems.Managers
         /// <summary>
         /// Define a mensagem, a cor da mensagem e abre a janela da notificação
         /// </summary>
-        public void SetMessage(string text, Color32 messageColor, float duration=1f)
+        public void SetMessage(string text, Color32 messageColor, string typeOfMessage, float duration=1f)
 		{
-			this.duration = duration;
+			Transform windowType;
+
+			if(typeOfMessage == "win")
+			{
+                window.GetComponent<Image>().sprite = winWindow;
+            }else if (typeOfMessage == "lose")
+            {
+                window.GetComponent<Image>().sprite = loseWindow;
+            }
+            else
+            {
+                window.GetComponent<Image>().sprite = infoWindow;
+            }
+
+            this.duration = duration;
             window.gameObject.SetActive(false);
             StopCoroutine(nameof(StartMessage));
-			window.gameObject.SetActive(true);
-			window.localScale = Vector3.zero;
+            window.gameObject.SetActive(true);
+            window.localScale = Vector3.zero;
 
 			message.text = text;
 			message.color = messageColor;

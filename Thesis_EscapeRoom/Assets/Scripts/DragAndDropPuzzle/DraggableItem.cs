@@ -47,15 +47,18 @@ namespace Unity.FantasyKingdom
 
         public void OnBeginDrag(PointerEventData eventData)
         {
-            // Update the position of the object based on the mouse position and the offset
-            Vector3 newPosition = GetMouseWorldPosition(eventData.position) + _offset;
-            UpdateTransformPosition(newPosition);
+            // Calculate the initial offset between the object's position and the world position of the mouse
+            _offset = transform.position - GetMouseWorldPosition(eventData.position);
         }
 
         public void OnDrag(PointerEventData eventData)
         {
-            // Update the position of the object based on the mouse position and the offset
+            // Get the world position of the mouse
             Vector3 newPosition = GetMouseWorldPosition(eventData.position) + _offset;
+
+            // Lock movement to world axis
+            newPosition.y = transform.position.y; // For XZ plane; adjust for other planes if necessary
+
             UpdateTransformPosition(newPosition);
         }
 
@@ -63,9 +66,16 @@ namespace Unity.FantasyKingdom
         {
             if (_mainCamera == null) return Vector3.zero;
 
-            Vector3 mouseScreenPosition = new Vector3(screenPosition.x, screenPosition.y,
-                _mainCamera.WorldToScreenPoint(transform.position).z); // Maintain z-depth
-            return _mainCamera.ScreenToWorldPoint(mouseScreenPosition);
+            // Use a fixed distance (z) from the camera to maintain consistent world space mapping
+            Plane dragPlane = new Plane(Vector3.up, transform.position); // Drag along the XZ plane (adjust normal for other planes)
+            Ray ray = _mainCamera.ScreenPointToRay(screenPosition);
+
+            if (dragPlane.Raycast(ray, out float enter))
+            {
+                return ray.GetPoint(enter);
+            }
+
+            return transform.position; // Fallback to current position if raycast fails
         }
 
         private void UpdateTransformPosition(Vector3 position)

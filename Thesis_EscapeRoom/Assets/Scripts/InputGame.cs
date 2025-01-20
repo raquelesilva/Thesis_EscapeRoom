@@ -14,6 +14,10 @@ namespace Unity.FantasyKingdom
         [SerializeField] GameObject gameUI;
         [SerializeField] List<Answers> allAnswers = new();
 
+        [Header("NPC")]
+        [SerializeField] DialogueTrigger npc;
+        [SerializeField] TextAsset nextDialogue;
+
         public void StartGame()
         {
             StartCoroutine(DelayStartGame());
@@ -57,21 +61,22 @@ namespace Unity.FantasyKingdom
 
             if (correct == allAnswers.Count)
             {
-                NotificationManager.instance.SetMessage("Boa conseguiste!", Color.green);
+                NotificationManager.instance.SetMessage("Boa conseguiste!", Color.green, "win");
                 CloseGame();
             }
             else if (correct == 0)
             {
-                NotificationManager.instance.SetMessage("Revê todas as tuas respostas!", Color.red);
+                NotificationManager.instance.SetMessage("Revê todas as tuas respostas!", Color.red, "lose");
             }
             else
             {
-                NotificationManager.instance.SetMessage("Revê algumas das tuas respostas!", Color.yellow);
+                NotificationManager.instance.SetMessage("Revê algumas das tuas respostas!", Color.yellow, "lose");
             }
         }
 
         public void CloseGame()
         {
+            npc.ChangeDialogue(nextDialogue);
             gameUI.SetActive(false);
             FirstPersonController.instance.SetPause(false);
         }
