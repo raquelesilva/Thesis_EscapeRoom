@@ -58004,6 +58004,7 @@ MonoBehaviour:
   logContent: {fileID: 1895988905}
   inputMessage: {fileID: 199348042}
   message: {fileID: 655773788}
+  sendButton: {fileID: 597051141}
   firstPersonController: {fileID: 629068839468893781}
   openAICompanion: {fileID: 163183970}
 --- !u!23 &6885586784606855051

@@ -18,6 +18,7 @@ namespace Unity.FantasyKingdom
         [SerializeField] GameObject logContent;
         [SerializeField] TMP_InputField inputMessage;
         [SerializeField] TextMeshProUGUI message;
+        [SerializeField] Button sendButton;
 
         [Header("Scripts")]
         [SerializeField] FirstPersonController firstPersonController;
@@ -51,12 +52,14 @@ namespace Unity.FantasyKingdom
 
             openAICompanion.AskOpenAI(inputMessage.text);
             inputMessage.interactable = false;
+            sendButton.interactable = false;
         }
 
         public void RecieveMessage(string AIMessage)
         {
             AddToLog(AIMessage, false);
             inputMessage.interactable = true;
+            sendButton.interactable = true;
         }
 
         private void AddToLog(string messagemText, bool isPlayer)
