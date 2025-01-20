@@ -23,13 +23,13 @@ namespace Unity.FantasyKingdom
             if (isCorrect)
             {
                 currentCorrect++;
-                NotificationManager.instance.SetMessage("Isso Mesmo!", Color.green);
+                NotificationManager.instance.SetMessage("Isso Mesmo!", Color.green, "win");
             }
             else
             {
                 currentErrors++;
                 GetHint(currentErrors);
-                NotificationManager.instance.SetMessage("Hmm tenta novamente!", Color.red);
+                NotificationManager.instance.SetMessage("Hmm tenta novamente!", Color.red, "lose");
             }
         }
 

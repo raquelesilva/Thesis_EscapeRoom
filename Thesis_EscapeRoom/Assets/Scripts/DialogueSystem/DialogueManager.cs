@@ -18,7 +18,6 @@ namespace Unity.FantasyKingdom
         [SerializeField] private TextMeshProUGUI displayNameText;
         [SerializeField] private Image displayPortrait;
         [SerializeField] private GameObject continueButton;
-        private Animator layoutAnim;
 
         [Header("Choices UI")]
         [SerializeField] private GameObject[] choices;
@@ -30,7 +29,6 @@ namespace Unity.FantasyKingdom
 
         private const string speakerTag = "speaker";
         private const string portraitTag = "portrait";
-        private const string layoutTag = "layout";
         private const string checkAnswerTag = "checkAnswer";
         private const string playEventTag = "playEvent";
         private bool answerValue;
@@ -52,8 +50,6 @@ namespace Unity.FantasyKingdom
         {
             dialogueIsActive = false;
             dialoguePanel.SetActive(false);
-
-            layoutAnim = dialoguePanel.GetComponent<Animator>();
 
             choicesTxt = new TextMeshProUGUI[choices.Length];
             int index = 0;
@@ -84,7 +80,6 @@ namespace Unity.FantasyKingdom
 
             // Reset layout, and speaker
             displayNameText.text = "????";
-            layoutAnim.SetTrigger("right");
 
             ContinueStory();
         }
@@ -108,11 +103,22 @@ namespace Unity.FantasyKingdom
         {
             if (currentStory.canContinue)
             {
-                dialogueText.text = currentStory.Continue();
+                string storyText = currentStory.Continue().Trim();
 
-                DisplayChoices();
+                // Check if the text is empty, and skip if it is
+                if (!string.IsNullOrEmpty(storyText))
+                {
+                    dialogueText.text = storyText;
 
-                HandleTags(currentStory.currentTags);
+                    // Display choices and handle tags only if text exists
+                    DisplayChoices();
+                    HandleTags(currentStory.currentTags);
+                }
+                else
+                {
+                    // Automatically continue to the next line if it's empty
+                    ContinueStory();
+                }
             }
             else
             {
@@ -140,9 +146,6 @@ namespace Unity.FantasyKingdom
                         break;
                     case portraitTag:
                         Debug.Log("portrait = " + tagValue);
-                        break;
-                    case layoutTag:
-                        layoutAnim.SetTrigger(tagValue);
                         break;
                     case checkAnswerTag:
                         if (tagValue == "true")

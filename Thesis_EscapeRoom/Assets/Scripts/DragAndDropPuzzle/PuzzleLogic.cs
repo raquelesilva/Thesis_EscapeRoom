@@ -13,7 +13,9 @@ namespace Unity.FantasyKingdom
         [SerializeField] TextAsset assembleDialogue;
 
         [Header("Objects")]
+        [SerializeField] Camera mainCamera;
         [SerializeField] GameObject playerGO;
+        [SerializeField] FirstPersonController firstPersonController;
         [SerializeField] GameObject puzzleCamera;
 
         [Header("Find Pieces")]
@@ -43,6 +45,8 @@ namespace Unity.FantasyKingdom
         {
             findPiecesGO.SetActive(true);
             puzzleParent.gameObject.SetActive(false);
+            firstPersonController = playerGO.GetComponent<FirstPersonController>();
+            mainCamera = Camera.main;
         }
 
         private void Start()
@@ -68,19 +72,20 @@ namespace Unity.FantasyKingdom
 
             if (catchedPieces == numPieces)
             {
-                playerGO.GetComponent<FirstPersonController>().SetPause(true);
-
-                findPiecesGO.SetActive(false);
-                puzzleParent.gameObject.SetActive(true);
-                dialogueTrigger.ChangeDialogue(assembleDialogue);
-                Camera.main.gameObject.SetActive(false);
+                StartPuzzleGame();
             }
         }
 
         public void StartPuzzleGame()
         {
             puzzleCamera.SetActive(true);
-            playerGO.SetActive(false);
+
+            firstPersonController.SetPause(true);
+
+            findPiecesGO.SetActive(false);
+            puzzleParent.gameObject.SetActive(true);
+            dialogueTrigger.ChangeDialogue(assembleDialogue);
+            mainCamera.gameObject.SetActive(false);
 
             // Initialize post-processing effects
             if (postProcessingVolume != null && postProcessingVolume.profile.TryGet(out _depthOfField))
@@ -113,6 +118,7 @@ namespace Unity.FantasyKingdom
 
         private System.Collections.IEnumerator MoveToFocusPoint(Transform puzzle, Vector3 focusPoint)
         {
+            Debug.Log("MoveToFocusPoint");
             while (Vector3.Distance(puzzle.position, focusPoint) > 0.01f)
             {
                 puzzle.position = Vector3.Lerp(puzzle.position, focusPoint, Time.deltaTime * moveSpeed);
@@ -137,10 +143,12 @@ namespace Unity.FantasyKingdom
 
         private void EndPuzzle()
         {
+            firstPersonController.SetPause(false);
+            mainCamera.gameObject.SetActive(true);
             puzzleCamera.SetActive(false);
-            playerGO.SetActive(true);
+
+            puzzleParent.gameObject.SetActive(false);
             dialogueTrigger.ChangeDialogue(poemDialogue);
-            Camera.main.gameObject.SetActive(true);
 
             StartCoroutine(MoveToFocusPoint(puzzleParent, _puzzleInitialPosition));
         }
