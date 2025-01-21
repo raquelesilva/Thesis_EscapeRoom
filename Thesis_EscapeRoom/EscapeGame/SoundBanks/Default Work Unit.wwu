@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Music" ID="{B0DFE454-E19C-4585-9637-EECBBEDDBF0A}">
 					<ObjectInclusionList>
+						<ObjectRef Name="MenuMusic_Play" ID="{21DD881E-1670-4B30-8549-24AF042D022B}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="InGameMusic_Play" ID="{65352A1E-33C9-4C28-9F17-940665AE66E5}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID INGAMEMUSIC_PLAY = 2630200976U;
+        static const AkUniqueID MENUMUSIC_PLAY = 4011733850U;
         static const AkUniqueID PICKUP = 3978245845U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_JUMP = 3689126666U;

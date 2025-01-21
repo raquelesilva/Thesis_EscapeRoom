@@ -10,11 +10,35 @@
     "Type": "User",
     "GUID": "{B0DFE454-E19C-4585-9637-EECBBEDDBF0A}",
     "Language": "SFX",
-    "Hash": "{29B3D35F-B5DD-8775-A4ED-8A9811A75E60}",
+    "Hash": "{CB689CF4-95D6-FCB0-1C7E-E03864CB494D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
     "ShortName": "Music",
     "Path": "Music.bnk",
     "Media": [
+     {
+      "Id": "56451228",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sailor - Track 2.wav",
+      "CachePath": "F0/{F0B89824-039C-1354-A1FC-1A4A35B3E004}.wem"
+     },
+     {
+      "Id": "215178205",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sailor - Track 3.wav",
+      "CachePath": "2D/{2D6DC7E8-6C58-6B9C-0AE8-7A563233EEE1}.wem"
+     },
+     {
+      "Id": "265666104",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sailor - Track 1.wav",
+      "CachePath": "E7/{E745357D-6F41-A34D-EEE7-FF2E5BAD660F}.wem"
+     },
      {
       "Id": "338140016",
       "Language": "SFX",
@@ -38,6 +62,14 @@
       "Location": "Memory",
       "ShortName": "SailorIdle - Track 5.wav",
       "CachePath": "54/{5423D00B-AE59-D180-F61A-454D5620C2CB}.wem"
+     },
+     {
+      "Id": "429184431",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sailor - Track 4.wav",
+      "CachePath": "F7/{F7846554-FD3A-4728-9E4C-FD530C4B15F4}.wem"
      },
      {
       "Id": "472319865",
@@ -80,10 +112,31 @@
         "Id": "992147341"
        }
       ]
+     },
+     {
+      "Id": "4011733850",
+      "Name": "MenuMusic_Play",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\MenuMusic_Play",
+      "GUID": "{21DD881E-1670-4B30-8549-24AF042D022B}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "56451228"
+       },
+       {
+        "Id": "215178205"
+       },
+       {
+        "Id": "265666104"
+       },
+       {
+        "Id": "429184431"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{BBDE6274-6ABC-5F60-81EF-BCF29653254D}"
+  "FileHash": "{ABB9D3D9-E907-A60E-4C93-D109234DA114}"
  }
 }
