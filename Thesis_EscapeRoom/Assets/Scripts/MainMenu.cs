@@ -20,5 +20,10 @@ namespace Unity.FantasyKingdom
             UnityEditor.EditorApplication.isPlaying = false;
 #endif
         }
+
+        public void GotoMainMenu()
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }

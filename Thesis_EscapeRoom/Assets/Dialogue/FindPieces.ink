@@ -1,6 +1,6 @@
 Temos mesmo que encontrar as peças do astrolábio para encontrar a nossa rota. #speaker:Navegador 1
 
-Procura nos vários andares. Pode ser que encontres alguma coisa.
+Procura nos vários andares. Pode ser que encontres alguma coisa. #speaker:Navegador 1
 
 -> main
 

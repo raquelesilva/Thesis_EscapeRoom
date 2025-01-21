@@ -21,20 +21,18 @@ public class OpenAICompanion : MonoBehaviour
 
     public void AskOpenAI(string playerMessage)
     {
-        Debug.Log("AskOpenAI");
         StartCoroutine(SendMessageToOpenAI(playerMessage));
     }
 
     private IEnumerator SendMessageToOpenAI(string message)
     {
-        Debug.Log("SendMessageToOpenAI");
         // Criação do payload
         var payload = new
         {
             model = "gpt-4",
             messages = new[]
             {
-                new { role = "system", content = "És um tutor num jogo da descoberta do caminho para a Índia. Dá dicas somente sobre este tema e em vez de respostas." },
+                new { role = "system", content = "És um tutor num jogo da descoberta do caminho para a Índia. Dá dicas curtas somente sobre este tema em vez de respostas." },
                 new { role = "user", content = message }
             }
         };
@@ -59,7 +57,6 @@ public class OpenAICompanion : MonoBehaviour
             JObject parsedResponse = JObject.Parse(jsonResponse);
             string aiResponse = parsedResponse["choices"]?[0]?["message"]?["content"]?.ToString();
 
-            Debug.Log("Resposta da IA: " + aiResponse);
             AdamastorManager.instance.RecieveMessage(aiResponse);
         }
         else
