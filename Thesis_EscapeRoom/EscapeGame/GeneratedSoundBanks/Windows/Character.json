@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{588DA9AC-60AE-4822-B457-989DD72A8830}",
     "Language": "SFX",
-    "Hash": "{3E18DC16-0949-ED00-5FCC-67ED71FE0DA8}",
+    "Hash": "{21D1939A-4CC0-0597-1C8E-80970BE500EB}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Character",
     "ShortName": "Character",
     "Path": "Character.bnk",
@@ -150,6 +150,14 @@
       "Location": "Memory",
       "ShortName": "WoodCreaks_2.wav",
       "CachePath": "57/{579C05E4-88E1-AE4B-432D-269431EB3E25}.wem"
+     },
+     {
+      "Id": "870846750",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_Menu.wav",
+      "CachePath": "7F/{7F25F925-5AE1-B160-81C6-BF567F6BBE7E}.wem"
      },
      {
       "Id": "917477889",
@@ -316,10 +324,24 @@
         }
        ]
       }
+     },
+     {
+      "Id": "2511555531",
+      "Name": "UI_Menu",
+      "ObjectPath": "\\Events\\Default Work Unit\\Charactert\\UI_Menu",
+      "GUID": "{378013B5-EAD6-4633-BCEF-68F5F64AE0A6}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.11920253",
+      "DurationMax": "0.11920253",
+      "MediaRefs": [
+       {
+        "Id": "870846750"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{642CF8CB-0540-E530-7AF4-32140A05E3E7}"
+  "FileHash": "{C4BB25F3-09FE-A3F1-C99B-B0FF8432C0A7}"
  }
 }

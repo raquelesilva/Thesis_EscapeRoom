@@ -22,6 +22,7 @@
 				</SoundBank>
 				<SoundBank Name="Character" ID="{588DA9AC-60AE-4822-B457-989DD72A8830}">
 					<ObjectInclusionList>
+						<ObjectRef Name="UI_Menu" ID="{378013B5-EAD6-4633-BCEF-68F5F64AE0A6}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PickUp" ID="{55BE0A0D-5B9D-4A8A-A79A-6E81DA564653}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_jump" ID="{6196068D-2267-4A9C-B712-DA0339A02210}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps" ID="{9270F56E-4840-4BB9-8915-AB087060B472}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>

@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1f50a62127bee343bb0c6a99c04d67f4
     GuidInternal: 
-    m_lastTime: -8584641469486818038
+    m_lastTime: -8584636855355613753
     List:
     - name: Ambience
       guid: 3ff4e9aa69563a488a34f525fec9de8f
@@ -387,7 +387,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5a6816154c16e34f97734d5caeec72e2
     GuidInternal: 
-    m_lastTime: -8584641469486797968
+    m_lastTime: -8584636858022436070
     List:
     - name: Ambience
       guid: 309885b71fc2074c8c937568c52da7bb
@@ -560,6 +560,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: UI_Menu
+      guid: b5138037d6ea3346bcef68f5f64ae0a6
+      id: 2511555531
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5a6816154c16e34f97734d5caeec72e2
+      - ElementName: Charactert
+        ObjectType: 4
+        guid: 3af0a1ea50d9954f88816bf4a310cacd
+      - ElementName: UI_Menu
+        ObjectType: 3
+        guid: b5138037d6ea3346bcef68f5f64ae0a6
+      Path: Events\Default Work Unit\Charactert\UI_Menu
+      maxAttenuation: 0
+      maxDuration: 0.11920253
+      minDuration: 0.11920253
     - name: WaveEmitter_1
       guid: fa078aa81b82da44904c9792a79ee71e
       id: 3193985440
@@ -876,7 +896,7 @@ MonoBehaviour:
     m_lastTime: -8584643054136511421
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000002300000067000000680000006c0000006d0000006e0000007300000074000000750000008b0000008c000000930000009400000095000000d0000000d1000000f4000000f500000066010000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000230000002f00000067000000680000006c0000006d0000006e0000007300000074000000750000008b0000008c000000930000009400000095000000d0000000d1000000f4000000f500000066010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

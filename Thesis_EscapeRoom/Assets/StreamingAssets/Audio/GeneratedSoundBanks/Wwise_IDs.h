@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_JUMP = 3689126666U;
         static const AkUniqueID SHIPAMBIENCE = 1423153471U;
+        static const AkUniqueID UI_MENU = 2511555531U;
         static const AkUniqueID WAVEEMITTER_1 = 3193985440U;
         static const AkUniqueID WAVEEMITTER_2 = 3193985443U;
     } // namespace EVENTS

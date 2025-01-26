@@ -101,6 +101,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="UI_Menu" ID="{378013B5-EAD6-4633-BCEF-68F5F64AE0A6}">
+							<ChildrenList>
+								<Action Name="" ID="{51721336-3500-455F-A6F5-72EEBF3707BA}" ShortID="120963878">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Menu" ID="{761A170F-7FDE-410F-95BC-927AA825A3AF}" WorkUnitID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
