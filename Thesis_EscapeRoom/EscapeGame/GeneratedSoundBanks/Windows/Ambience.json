@@ -1,0 +1,449 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "85412153",
+    "Type": "User",
+    "GUID": "{AAE9F43F-5669-483A-8A34-F525FEC9DE8F}",
+    "Language": "SFX",
+    "Hash": "{D1920CC2-AC1F-9DA4-205F-EFB8787D9FCD}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Ambience",
+    "ShortName": "Ambience",
+    "Path": "Ambience.bnk",
+    "Media": [
+     {
+      "Id": "19808381",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bottles_9.wav",
+      "CachePath": "B7/{B7E15B37-136E-1F9E-0A70-56EDB6E4E264}.wem"
+     },
+     {
+      "Id": "30702727",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_3.wav",
+      "CachePath": "16/{16159337-F2A8-4A8D-781A-08DEFAC759EC}.wem"
+     },
+     {
+      "Id": "31222888",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_9.wav",
+      "CachePath": "34/{3452FFB9-85B6-A860-088E-0F29D8675EB3}.wem"
+     },
+     {
+      "Id": "100641892",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bottles_3.wav",
+      "CachePath": "41/{41CD8AC0-398F-07DB-DBB9-7FBB9FF256ED}.wem"
+     },
+     {
+      "Id": "173734148",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bottles_4.wav",
+      "CachePath": "37/{37CD8C14-4474-342F-84E2-BE9B93E5A975}.wem"
+     },
+     {
+      "Id": "176280475",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "wave_emitter_loop_1.wav",
+      "CachePath": "87/{87E91248-0BB0-3AA6-6AFE-95786246ACEF}.wem"
+     },
+     {
+      "Id": "245953259",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_8.wav",
+      "CachePath": "FA/{FAB528A5-E34E-D061-C20C-F0F38501F18C}.wem"
+     },
+     {
+      "Id": "273255614",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_13.wav",
+      "CachePath": "8E/{8E55C587-280E-79FE-2A45-7C303F9DFEA7}.wem"
+     },
+     {
+      "Id": "285493512",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_10.wav",
+      "CachePath": "03/{033BFED2-7CE3-E283-83A2-37597FC4B055}.wem"
+     },
+     {
+      "Id": "292681309",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_4.wav",
+      "CachePath": "39/{39BC3B5C-573A-32CD-8E84-57994D44509D}.wem"
+     },
+     {
+      "Id": "307430808",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_6.wav",
+      "CachePath": "18/{18D1E228-9AA9-DCB2-F206-ACE054FE7CCC}.wem"
+     },
+     {
+      "Id": "338182446",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bottles_6.wav",
+      "CachePath": "D4/{D4D33000-5B3B-43F2-04D6-773A0EF99FAC}.wem"
+     },
+     {
+      "Id": "347357659",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_7.wav",
+      "CachePath": "21/{21835501-92C1-8786-0C95-469C068517D2}.wem"
+     },
+     {
+      "Id": "351161049",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_5.wav",
+      "CachePath": "76/{76FAB01F-14C3-F9CB-BCFD-8B9795AB06C4}.wem"
+     },
+     {
+      "Id": "510228530",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bottles_10.wav",
+      "CachePath": "B3/{B3B6B914-0299-3B84-167B-41E8002057CD}.wem"
+     },
+     {
+      "Id": "534969521",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_12.wav",
+      "CachePath": "AE/{AE00575F-4AEF-558C-46A1-74F8C51A958D}.wem"
+     },
+     {
+      "Id": "549785139",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bottles_2.wav",
+      "CachePath": "57/{57A80570-E412-2693-BDDE-DA3D93EB7898}.wem"
+     },
+     {
+      "Id": "619488382",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_15.wav",
+      "CachePath": "E1/{E1FC9FDB-2E17-0C3A-C6C4-5EC03B1B776C}.wem"
+     },
+     {
+      "Id": "663797679",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SailsLoop_2.wav",
+      "CachePath": "72/{72841321-26BB-6DBF-E1CC-9BDFEED30331}.wem"
+     },
+     {
+      "Id": "681537784",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_14.wav",
+      "CachePath": "7A/{7AB454E2-4E5A-06D8-3B5E-601B66D0CDCD}.wem"
+     },
+     {
+      "Id": "685091988",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bottles_5.wav",
+      "CachePath": "07/{0774BE54-056D-F7B9-5D42-D07B1C7A7B4F}.wem"
+     },
+     {
+      "Id": "747843737",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bottles_7.wav",
+      "CachePath": "49/{49136B94-7E77-0D89-D7F5-925C2D389E78}.wem"
+     },
+     {
+      "Id": "771722958",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sails.wav",
+      "CachePath": "46/{461596F7-DFC0-660B-3129-F61655168AB3}.wem"
+     },
+     {
+      "Id": "920404243",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "wave_emitter_loop_2.wav",
+      "CachePath": "60/{6044F6D9-2ECE-8889-7537-D79248E794A0}.wem"
+     },
+     {
+      "Id": "932526148",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaveLoopsActual.wav",
+      "CachePath": "CC/{CCB719C9-F070-08E1-474B-C481478751C2}.wem"
+     },
+     {
+      "Id": "960299649",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bottles_8.wav",
+      "CachePath": "86/{867ED684-E124-91D0-4B87-C0701AD76DAD}.wem"
+     },
+     {
+      "Id": "991800915",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bottles_1.wav",
+      "CachePath": "54/{54FAE872-BDCC-CB01-7B88-499171D6BEEC}.wem"
+     },
+     {
+      "Id": "1000102019",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_2.wav",
+      "CachePath": "E8/{E8B5D59C-DA70-ADB1-D924-D208827C202B}.wem"
+     },
+     {
+      "Id": "1023319846",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SailsOneShot.wav",
+      "CachePath": "69/{6980A812-2603-A744-790D-5AE22D58560A}.wem"
+     },
+     {
+      "Id": "1051285658",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ship_squeack_11.wav",
+      "CachePath": "52/{52B28D54-9AB0-5144-5348-75F658B2FF28}.wem"
+     }
+    ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "60256384",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\AmbienceShip\\AmbShip\\Bottles\\New Silence_02\\Silence",
+       "GUID": "{63B9E1EF-6D30-4CC2-8B53-DC4E5F39E80F}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "290880543",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\AmbienceShip\\AmbShip\\Bottles\\New Silence_01\\Silence",
+       "GUID": "{89CD33BF-5BF4-4550-873A-ECD4CA0423AF}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "372705211",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\AmbienceShip\\AmbShip\\Bottles\\New Silence\\Silence",
+       "GUID": "{55DEA9E4-D5B1-4B0E-AFA6-39DEC2ADA2E9}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "483242044",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\AmbienceShip\\AmbShip\\SailsMore\\Silence\\Silence",
+       "GUID": "{2F5D67DC-570E-4FAA-8C94-1253829A9188}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "589117352",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\AmbienceShip\\AmbShip\\Woodsqueacks\\New Silence\\Silence",
+       "GUID": "{12748639-8218-4431-8ED0-B7060101D25A}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "1423153471",
+      "Name": "ShipAmbience",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\ShipAmbience",
+      "GUID": "{68960D90-B3D2-4012-8655-C934C67B980B}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "19808381"
+       },
+       {
+        "Id": "30702727"
+       },
+       {
+        "Id": "31222888"
+       },
+       {
+        "Id": "100641892"
+       },
+       {
+        "Id": "173734148"
+       },
+       {
+        "Id": "245953259"
+       },
+       {
+        "Id": "273255614"
+       },
+       {
+        "Id": "285493512"
+       },
+       {
+        "Id": "292681309"
+       },
+       {
+        "Id": "307430808"
+       },
+       {
+        "Id": "338182446"
+       },
+       {
+        "Id": "347357659"
+       },
+       {
+        "Id": "351161049"
+       },
+       {
+        "Id": "510228530"
+       },
+       {
+        "Id": "534969521"
+       },
+       {
+        "Id": "549785139"
+       },
+       {
+        "Id": "619488382"
+       },
+       {
+        "Id": "663797679"
+       },
+       {
+        "Id": "681537784"
+       },
+       {
+        "Id": "685091988"
+       },
+       {
+        "Id": "747843737"
+       },
+       {
+        "Id": "771722958"
+       },
+       {
+        "Id": "932526148"
+       },
+       {
+        "Id": "960299649"
+       },
+       {
+        "Id": "991800915"
+       },
+       {
+        "Id": "1000102019"
+       },
+       {
+        "Id": "1023319846"
+       },
+       {
+        "Id": "1051285658"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "60256384"
+        },
+        {
+         "Id": "290880543"
+        },
+        {
+         "Id": "372705211"
+        },
+        {
+         "Id": "483242044"
+        },
+        {
+         "Id": "589117352"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3193985440",
+      "Name": "WaveEmitter_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\WaveEmitter_1",
+      "GUID": "{A88A07FA-821B-44DA-904C-9792A79EE71E}",
+      "MaxAttenuation": "20",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "176280475"
+       }
+      ]
+     },
+     {
+      "Id": "3193985443",
+      "Name": "WaveEmitter_2",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\WaveEmitter_2",
+      "GUID": "{598643B7-7DDA-4195-998E-024010BB7B8A}",
+      "MaxAttenuation": "20",
+      "DurationType": "OneShot",
+      "DurationMin": "71.42519",
+      "DurationMax": "71.42519",
+      "MediaRefs": [
+       {
+        "Id": "920404243"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{52FE6D5E-D900-2DA2-564D-687E93BC4893}"
+ }
+}

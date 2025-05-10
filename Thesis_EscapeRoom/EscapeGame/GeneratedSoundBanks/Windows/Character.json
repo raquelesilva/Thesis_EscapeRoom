@@ -1,0 +1,347 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "436743010",
+    "Type": "User",
+    "GUID": "{588DA9AC-60AE-4822-B457-989DD72A8830}",
+    "Language": "SFX",
+    "Hash": "{21D1939A-4CC0-0597-1C8E-80970BE500EB}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Character",
+    "ShortName": "Character",
+    "Path": "Character.bnk",
+    "Media": [
+     {
+      "Id": "30233752",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "pickUpSound.wav",
+      "CachePath": "25/{25F89831-F182-1FEC-DBAF-A2C67125ACCC}.wem"
+     },
+     {
+      "Id": "90986445",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WoodCreaks_9.wav",
+      "CachePath": "D9/{D9108510-89DA-2ABB-816D-B1FBF679CC97}.wem"
+     },
+     {
+      "Id": "119381897",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "footsteps_12.wav",
+      "CachePath": "F9/{F9CB04C7-AF93-FFF9-C809-42B27170ECCB}.wem"
+     },
+     {
+      "Id": "131324714",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "footsteps_10.wav",
+      "CachePath": "AF/{AF372D90-7070-7A2E-AB60-61682D055AE4}.wem"
+     },
+     {
+      "Id": "134403587",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WoodCreaks_5.wav",
+      "CachePath": "C6/{C6576643-15C2-C0A1-8F1A-88610100C385}.wem"
+     },
+     {
+      "Id": "198760738",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WoodCreaks_8.wav",
+      "CachePath": "BF/{BF39A855-3487-CD42-E43E-6A88854AF970}.wem"
+     },
+     {
+      "Id": "258870878",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WoodCreaks_4.wav",
+      "CachePath": "09/{09C2200A-F586-0A27-900C-951A723F2D85}.wem"
+     },
+     {
+      "Id": "259768357",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "footsteps_3.wav",
+      "CachePath": "63/{63013EE5-B079-3F94-841E-E84E5353DBF5}.wem"
+     },
+     {
+      "Id": "297241481",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "footsteps_7.wav",
+      "CachePath": "DA/{DACEFB91-899E-65A2-90DE-7DD4288B7AA8}.wem"
+     },
+     {
+      "Id": "365921559",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WoodCreaks_1.wav",
+      "CachePath": "E7/{E71CF03B-1AA7-46F9-A2A4-058AF8C39747}.wem"
+     },
+     {
+      "Id": "389080944",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WoodCreaks_3.wav",
+      "CachePath": "4D/{4DE8E55A-6E6B-9503-56EC-E8065E72A50B}.wem"
+     },
+     {
+      "Id": "466772889",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "footsteps_4.wav",
+      "CachePath": "27/{27BB8821-4232-3330-DEF4-BF29A4171BE9}.wem"
+     },
+     {
+      "Id": "522933961",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "footsteps_11.wav",
+      "CachePath": "B0/{B0B3CB45-8DAD-13DB-1243-5D4F5CFACE19}.wem"
+     },
+     {
+      "Id": "556581480",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "footsteps_1.wav",
+      "CachePath": "33/{3301A4B6-09BA-855E-A5A2-532418CF9880}.wem"
+     },
+     {
+      "Id": "618409209",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "footsteps_5.wav",
+      "CachePath": "3E/{3E420105-8DA3-A112-3886-EE09265B512B}.wem"
+     },
+     {
+      "Id": "694523224",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WoodCreaks_7.wav",
+      "CachePath": "CB/{CBC169E1-F112-76DB-1E0E-ED6C00D6741B}.wem"
+     },
+     {
+      "Id": "805003803",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WoodCreaks_2.wav",
+      "CachePath": "57/{579C05E4-88E1-AE4B-432D-269431EB3E25}.wem"
+     },
+     {
+      "Id": "870846750",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_Menu.wav",
+      "CachePath": "7F/{7F25F925-5AE1-B160-81C6-BF567F6BBE7E}.wem"
+     },
+     {
+      "Id": "917477889",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "footsteps_2.wav",
+      "CachePath": "EF/{EF6F1767-A080-AB59-CFDA-722AAD0D2236}.wem"
+     },
+     {
+      "Id": "925709984",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "footsteps_6.wav",
+      "CachePath": "4E/{4EEDCF7A-D012-DDAA-A1AC-23030085CF68}.wem"
+     },
+     {
+      "Id": "974931646",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "footsteps_9.wav",
+      "CachePath": "A9/{A9D32C9E-55F8-D455-D483-E62AEA7D7FE2}.wem"
+     },
+     {
+      "Id": "983802680",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WoodCreaks_6.wav",
+      "CachePath": "00/{00BF24B9-878C-199C-8B18-47A713E8A1E9}.wem"
+     },
+     {
+      "Id": "1025225074",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "footsteps_8.wav",
+      "CachePath": "2D/{2D47C4C1-7797-C4C6-E776-9C81AC84F778}.wem"
+     }
+    ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "1008402193",
+       "Name": "Low_Pass_20KHz",
+       "ObjectPath": "\\Effects\\Factory Effects\\Parametric EQ\\Low Pass Filters\\Low_Pass_20KHz",
+       "GUID": "{830124FB-B9D5-4AE8-846E-E94A74652666}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "3978245845",
+      "Name": "PickUp",
+      "ObjectPath": "\\Events\\Default Work Unit\\Charactert\\PickUp",
+      "GUID": "{55BE0A0D-5B9D-4A8A-A79A-6E81DA564653}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.22712018",
+      "DurationMax": "0.22712018",
+      "MediaRefs": [
+       {
+        "Id": "30233752"
+       }
+      ]
+     },
+     {
+      "Id": "3854155799",
+      "Name": "Play_Footsteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\Charactert\\Play_Footsteps",
+      "GUID": "{9270F56E-4840-4BB9-8915-AB087060B472}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0283345",
+      "DurationMax": "2.7138107",
+      "MediaRefs": [
+       {
+        "Id": "90986445"
+       },
+       {
+        "Id": "119381897"
+       },
+       {
+        "Id": "131324714"
+       },
+       {
+        "Id": "134403587"
+       },
+       {
+        "Id": "198760738"
+       },
+       {
+        "Id": "258870878"
+       },
+       {
+        "Id": "259768357"
+       },
+       {
+        "Id": "297241481"
+       },
+       {
+        "Id": "365921559"
+       },
+       {
+        "Id": "389080944"
+       },
+       {
+        "Id": "466772889"
+       },
+       {
+        "Id": "522933961"
+       },
+       {
+        "Id": "556581480"
+       },
+       {
+        "Id": "618409209"
+       },
+       {
+        "Id": "694523224"
+       },
+       {
+        "Id": "805003803"
+       },
+       {
+        "Id": "917477889"
+       },
+       {
+        "Id": "925709984"
+       },
+       {
+        "Id": "974931646"
+       },
+       {
+        "Id": "983802680"
+       },
+       {
+        "Id": "1025225074"
+       }
+      ]
+     },
+     {
+      "Id": "3689126666",
+      "Name": "Play_jump",
+      "ObjectPath": "\\Events\\Default Work Unit\\Charactert\\Play_jump",
+      "GUID": "{6196068D-2267-4A9C-B712-DA0339A02210}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.46202067",
+      "DurationMax": "0.4865207",
+      "MediaRefs": [
+       {
+        "Id": "466772889"
+       },
+       {
+        "Id": "917477889"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1008402193"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2511555531",
+      "Name": "UI_Menu",
+      "ObjectPath": "\\Events\\Default Work Unit\\Charactert\\UI_Menu",
+      "GUID": "{378013B5-EAD6-4633-BCEF-68F5F64AE0A6}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.11920253",
+      "DurationMax": "0.11920253",
+      "MediaRefs": [
+       {
+        "Id": "870846750"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C4BB25F3-09FE-A3F1-C99B-B0FF8432C0A7}"
+ }
+}

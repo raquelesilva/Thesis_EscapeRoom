@@ -1,0 +1,142 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3991942870",
+    "Type": "User",
+    "GUID": "{B0DFE454-E19C-4585-9637-EECBBEDDBF0A}",
+    "Language": "SFX",
+    "Hash": "{CC0553D7-5F6F-7B11-C4DB-CED8F5DF9241}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
+    "ShortName": "Music",
+    "Path": "Music.bnk",
+    "Media": [
+     {
+      "Id": "56451228",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sailor - Track 2.wav",
+      "CachePath": "F0/{F0B89824-039C-1354-A1FC-1A4A35B3E004}.wem"
+     },
+     {
+      "Id": "215178205",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sailor - Track 3.wav",
+      "CachePath": "2D/{2D6DC7E8-6C58-6B9C-0AE8-7A563233EEE1}.wem"
+     },
+     {
+      "Id": "265666104",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sailor - Track 1.wav",
+      "CachePath": "E7/{E745357D-6F41-A34D-EEE7-FF2E5BAD660F}.wem"
+     },
+     {
+      "Id": "338140016",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SailorIdle - Track 1.wav",
+      "CachePath": "5A/{5A390936-1B11-C945-2600-2FE4B7DEE158}.wem"
+     },
+     {
+      "Id": "360560811",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SailorIdle - Track 2.wav",
+      "CachePath": "F2/{F24B4F2F-EF1C-62E5-90FA-6835F6EDF525}.wem"
+     },
+     {
+      "Id": "426221048",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SailorIdle - Track 5.wav",
+      "CachePath": "54/{5423D00B-AE59-D180-F61A-454D5620C2CB}.wem"
+     },
+     {
+      "Id": "429184431",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sailor - Track 4.wav",
+      "CachePath": "F7/{F7846554-FD3A-4728-9E4C-FD530C4B15F4}.wem"
+     },
+     {
+      "Id": "472319865",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SailorIdle - Track 3.wav",
+      "CachePath": "25/{2558FD7B-4477-C77F-5F76-52352A6A43BB}.wem"
+     },
+     {
+      "Id": "992147341",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SailorIdle - Track 4.wav",
+      "CachePath": "6F/{6F153424-2865-34B5-2A26-F344BDF85EDF}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2630200976",
+      "Name": "InGameMusic_Play",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\InGameMusic_Play",
+      "GUID": "{65352A1E-33C9-4C28-9F17-940665AE66E5}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "338140016"
+       },
+       {
+        "Id": "360560811"
+       },
+       {
+        "Id": "426221048"
+       },
+       {
+        "Id": "472319865"
+       },
+       {
+        "Id": "992147341"
+       }
+      ]
+     },
+     {
+      "Id": "4011733850",
+      "Name": "MenuMusic_Play",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\MenuMusic_Play",
+      "GUID": "{21DD881E-1670-4B30-8549-24AF042D022B}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "56451228"
+       },
+       {
+        "Id": "215178205"
+       },
+       {
+        "Id": "265666104"
+       },
+       {
+        "Id": "429184431"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EACAA8A8-FFAA-5F1A-D6B8-2E85E6A7EB5F}"
+ }
+}

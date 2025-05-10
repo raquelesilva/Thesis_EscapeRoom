@@ -1,24 +1,28 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class InteractableObject : MonoBehaviour, IInteractable
+namespace Unity.FantasyKingdom
 {
-    // UnityEvent que será disparado quando o objeto for interagido
-    [SerializeField] UnityEvent onInteract;
-    [SerializeField] bool focusObject;
-    
-    Outline outline;
-    bool animatingOutline;
-
-    private void Start()
+    public class InteractableObject : MonoBehaviour, IInteractable
     {
-        outline = GetComponent<Outline>();
-    }
+        // UnityEvent que será disparado quando o objeto for interagido
+        [SerializeField] UnityEvent onInteract;
+        [SerializeField] bool focusObject;
 
-    public void Interact()
-    {
-        onInteract?.Invoke();
-    }
+        Outline outline;
+        bool animatingOutline;
 
-    public bool FocusObject() => focusObject;
+        private void Start()
+        {
+            outline = GetComponent<Outline>();
+        }
+
+        public void Interact()
+        {
+            Debug.Log("Invoke Interact");
+            onInteract?.Invoke();
+        }
+
+        public bool FocusObject() => focusObject;
+    }
 }

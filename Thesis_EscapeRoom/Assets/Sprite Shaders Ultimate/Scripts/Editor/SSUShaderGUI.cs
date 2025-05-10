@@ -1845,7 +1845,7 @@ namespace SpriteShadersUltimate
 
             if (GUILayout.Button(infoButton, buttonStyle, GUILayout.Width(26), GUILayout.Height((prop.type == MaterialProperty.PropType.Texture) ? 50 : 20)))
             {
-                CodingHelper.Open(displayContent, prop, shader, EditorGUIUtility.currentViewWidth);
+                //CodingHelper.Open(displayContent, prop, shader, EditorGUIUtility.currentViewWidth);
             }
         }
 

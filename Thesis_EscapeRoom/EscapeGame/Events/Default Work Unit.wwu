@@ -3,17 +3,117 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Test" ID="{65352A1E-33C9-4C28-9F17-940665AE66E5}">
+				<Folder Name="Music" ID="{A7AC57D0-D3C1-4A11-ACDC-83F170BF4A6A}" ShortID="408413901">
 					<ChildrenList>
-						<Action Name="" ID="{E6AA511F-A974-4C89-82AC-545D4EC0CC43}" ShortID="380251223">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="197115__kyster__music-from-the-middle-ages-05-2013-08-10-saltarello" ID="{ABA2D36B-1833-4903-873A-4A3F897DE85C}" WorkUnitID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="InGameMusic_Play" ID="{65352A1E-33C9-4C28-9F17-940665AE66E5}">
+							<ChildrenList>
+								<Action Name="" ID="{E6AA511F-A974-4C89-82AC-545D4EC0CC43}" ShortID="380251223">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="InGameMusic" ID="{0E8B34BF-694B-4097-B860-ACAEB91A8707}" WorkUnitID="{51DD22A6-3289-42B5-B5B7-139DFE8B99DF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MenuMusic_Play" ID="{21DD881E-1670-4B30-8549-24AF042D022B}">
+							<ChildrenList>
+								<Action Name="" ID="{A7CC0F26-7CCA-4A26-A39A-301402B65335}" ShortID="151310552">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MenuMusic" ID="{8AE3D2CF-926A-4F8C-8D8A-58D52E442D7C}" WorkUnitID="{51DD22A6-3289-42B5-B5B7-139DFE8B99DF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
+				<Folder Name="Ambience" ID="{B7859830-C21F-4C07-8C93-7568C52DA7BB}" ShortID="895424542">
+					<ChildrenList>
+						<Event Name="ShipAmbience" ID="{68960D90-B3D2-4012-8655-C934C67B980B}">
+							<ChildrenList>
+								<Action Name="" ID="{3B135DDA-27D5-400B-BCBA-C0DC40977426}" ShortID="602189224">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AmbShip" ID="{18F2B650-E6D7-45D3-90A2-575FFE072E2A}" WorkUnitID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WaveEmitter_1" ID="{A88A07FA-821B-44DA-904C-9792A79EE71E}">
+							<ChildrenList>
+								<Action Name="" ID="{1A62D6A8-CBBB-4660-837C-5369071FE91D}" ShortID="931499790">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WavesEmitter_1" ID="{8359FF98-34FB-4E95-B897-9B2D44AF159D}" WorkUnitID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WaveEmitter_2" ID="{598643B7-7DDA-4195-998E-024010BB7B8A}">
+							<ChildrenList>
+								<Action Name="" ID="{2D0AB10A-71A4-442E-8E74-C27411A3A173}" ShortID="764207995">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WaveEmitter_2" ID="{05F2AAEF-85D2-4868-ACC6-35F6C76AF6A1}" WorkUnitID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Charactert" ID="{EAA1F03A-D950-4F95-8881-6BF4A310CACD}" ShortID="486927737">
+					<ChildrenList>
+						<Event Name="Play_Footsteps" ID="{9270F56E-4840-4BB9-8915-AB087060B472}">
+							<ChildrenList>
+								<Action Name="" ID="{F6C007F6-2A94-4168-9FC5-98A4884EE129}" ShortID="800959413">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Steps" ID="{9A6A1D55-A9CB-4D20-B420-F60BA700D0DE}" WorkUnitID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PickUp" ID="{55BE0A0D-5B9D-4A8A-A79A-6E81DA564653}">
+							<ChildrenList>
+								<Action Name="" ID="{69D2E395-5ECD-44D5-93C3-CFD8F91B07EC}" ShortID="65067892">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GetPiece" ID="{5B38D077-2DEB-4711-90CA-86A796D5024E}" WorkUnitID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_jump" ID="{6196068D-2267-4A9C-B712-DA0339A02210}">
+							<ChildrenList>
+								<Action Name="" ID="{7CB44C5A-940D-465F-8744-335A58E91BD7}" ShortID="218198471">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{D26C1926-0F3D-496A-B45F-26033378C93D}" WorkUnitID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Menu" ID="{378013B5-EAD6-4633-BCEF-68F5F64AE0A6}">
+							<ChildrenList>
+								<Action Name="" ID="{51721336-3500-455F-A6F5-72EEBF3707BA}" ShortID="120963878">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Menu" ID="{761A170F-7FDE-410F-95BC-927AA825A3AF}" WorkUnitID="{9B337BD6-6EC3-45A4-94C5-6C6F2A1D340F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

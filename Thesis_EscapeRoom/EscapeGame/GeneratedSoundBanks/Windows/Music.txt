@@ -1,0 +1,15 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2630200976	InGameMusic_Play			\Default Work Unit\Music\InGameMusic_Play	
+	4011733850	MenuMusic_Play			\Default Work Unit\Music\MenuMusic_Play	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	56451228	Sailor - Track 2	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\F0\{F0B89824-039C-1354-A1FC-1A4A35B3E004}.wem		\Interactive Music Hierarchy\Default Work Unit\MenuMusic\MenuMusic\Sailor - Track 2		2566608
+	215178205	Sailor - Track 3	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\2D\{2D6DC7E8-6C58-6B9C-0AE8-7A563233EEE1}.wem		\Interactive Music Hierarchy\Default Work Unit\MenuMusic\MenuMusic\Sailor - Track 3		3314732
+	265666104	Sailor - Track 1	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\E7\{E745357D-6F41-A34D-EEE7-FF2E5BAD660F}.wem		\Interactive Music Hierarchy\Default Work Unit\MenuMusic\MenuMusic\Sailor - Track 1		2675280
+	338140016	SailorIdle - Track 1	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\5A\{5A390936-1B11-C945-2600-2FE4B7DEE158}.wem		\Interactive Music Hierarchy\Default Work Unit\InGameMusic\InGameMusic_01\SailorIdle - Track 1		11234040
+	360560811	SailorIdle - Track 2	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\F2\{F24B4F2F-EF1C-62E5-90FA-6835F6EDF525}.wem		\Interactive Music Hierarchy\Default Work Unit\InGameMusic\InGameMusic_01\SailorIdle - Track 2		11234040
+	426221048	SailorIdle - Track 5	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\54\{5423D00B-AE59-D180-F61A-454D5620C2CB}.wem		\Interactive Music Hierarchy\Default Work Unit\InGameMusic\InGameMusic_01\SailorIdle - Track 5		11234040
+	429184431	Sailor - Track 4	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\F7\{F7846554-FD3A-4728-9E4C-FD530C4B15F4}.wem		\Interactive Music Hierarchy\Default Work Unit\MenuMusic\MenuMusic\Sailor - Track 4		3406080
+	472319865	SailorIdle - Track 3	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\25\{2558FD7B-4477-C77F-5F76-52352A6A43BB}.wem		\Interactive Music Hierarchy\Default Work Unit\InGameMusic\InGameMusic_01\SailorIdle - Track 3		11234040
+	992147341	SailorIdle - Track 4	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\6F\{6F153424-2865-34B5-2A26-F344BDF85EDF}.wem		\Interactive Music Hierarchy\Default Work Unit\InGameMusic\InGameMusic_01\SailorIdle - Track 4		11234040
+

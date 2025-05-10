@@ -32,17 +32,17 @@ namespace IGameMech
 
         public void Notify(string text)
         {
-            notificationManager.SetMessage(text, Color.white);
+            notificationManager.SetMessage(text, Color.white, "general");
         }
 
         public void NotifyRight(string text)
         {
-            notificationManager.SetMessage(text, notificationManager.GetColorRight());
+            notificationManager.SetMessage(text, notificationManager.GetColorRight(), "win");
         }
 
         public void NotifyWrong(string text)
         {
-            notificationManager.SetMessage(text, notificationManager.GetColorWrong());
+            notificationManager.SetMessage(text, notificationManager.GetColorWrong(), "lose");
         }
 
         public virtual void CheckAnswers()

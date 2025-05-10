@@ -16,6 +16,9 @@ in a written agreement between you and Audiokinetic Inc.
 Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
+using UnityEngine;
+using AK.Wwise;
+
 [UnityEngine.AddComponentMenu("Wwise/AkGameObj")]
 [UnityEngine.DisallowMultipleComponent]
 [UnityEngine.ExecuteInEditMode] //ExecuteInEditMode necessary to maintain proper state of isStaticObject.
@@ -302,9 +305,13 @@ public class AkGameObj : UnityEngine.MonoBehaviour
 				m_envData.UpdateAuxSend(gameObject, transform.position);
 			}
 
-			SetPosition();			
+			SetPosition();	
+			
+
 		}
 	}
+
+
 
 	/// Gets the position including the position offset, if applyPositionOffset is enabled. User can also override this method to calculate an arbitrary position.
 	/// \return  The position.
@@ -340,9 +347,14 @@ public class AkGameObj : UnityEngine.MonoBehaviour
 		{
 			return;
 		}
+
+        if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            Debug.Log("Player entered the trigger!");
+        }
 #endif
 
-		if (isEnvironmentAware && m_envData != null)
+        if (isEnvironmentAware && m_envData != null)
 		{
 			m_envData.AddAkEnvironment(other, m_Collider);
 		}
@@ -520,4 +532,7 @@ public class AkGameObj : UnityEngine.MonoBehaviour
 
 	#endregion
 }
+
+
+
 #endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

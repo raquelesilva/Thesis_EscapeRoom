@@ -3,9 +3,29 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{21A6501F-BE27-43E3-BB0C-6A99C04D67F4}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Test" ID="{CD24851E-0AEC-47A7-AED1-86B620051FA6}">
+				<SoundBank Name="Music" ID="{B0DFE454-E19C-4585-9637-EECBBEDDBF0A}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Test" ID="{65352A1E-33C9-4C28-9F17-940665AE66E5}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MenuMusic_Play" ID="{21DD881E-1670-4B30-8549-24AF042D022B}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="InGameMusic_Play" ID="{65352A1E-33C9-4C28-9F17-940665AE66E5}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Ambience" ID="{AAE9F43F-5669-483A-8A34-F525FEC9DE8F}">
+					<ObjectInclusionList>
+						<ObjectRef Name="ShipAmbience" ID="{68960D90-B3D2-4012-8655-C934C67B980B}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="WaveEmitter_2" ID="{598643B7-7DDA-4195-998E-024010BB7B8A}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="WaveEmitter_1" ID="{A88A07FA-821B-44DA-904C-9792A79EE71E}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Character" ID="{588DA9AC-60AE-4822-B457-989DD72A8830}">
+					<ObjectInclusionList>
+						<ObjectRef Name="UI_Menu" ID="{378013B5-EAD6-4633-BCEF-68F5F64AE0A6}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PickUp" ID="{55BE0A0D-5B9D-4A8A-A79A-6E81DA564653}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_jump" ID="{6196068D-2267-4A9C-B712-DA0339A02210}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Footsteps" ID="{9270F56E-4840-4BB9-8915-AB087060B472}" WorkUnitID="{1516685A-164C-4FE3-9773-4D5CAEEC72E2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -1,0 +1,52 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1423153471	ShipAmbience			\Default Work Unit\Ambience\ShipAmbience	
+	3193985440	WaveEmitter_1			\Default Work Unit\Ambience\WaveEmitter_1	
+	3193985443	WaveEmitter_2			\Default Work Unit\Ambience\WaveEmitter_2	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1686518004	AmbienceState			\Default Work Unit\AmbienceState	
+
+State	ID	Name	State Group			Notes
+	748895195	None	AmbienceState			
+	1043057783	BelowDeck	AmbienceState			
+	3894681889	OnDeck	AmbienceState			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	60256384	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Bottles\New Silence_02\Silence	
+	290880543	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Bottles\New Silence_01\Silence	
+	372705211	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Bottles\New Silence\Silence	
+	483242044	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\SailsMore\Silence\Silence	
+	589117352	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Woodsqueacks\New Silence\Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	19808381	bottles_9	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\B7\{B7E15B37-136E-1F9E-0A70-56EDB6E4E264}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Bottles\bottles_9		106452
+	30702727	ship_squeack_3	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\16\{16159337-F2A8-4A8D-781A-08DEFAC759EC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Woodsqueacks\ship_squeack_3		438508
+	31222888	ship_squeack_9	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\34\{3452FFB9-85B6-A860-088E-0F29D8675EB3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Woodsqueacks\ship_squeack_9		288808
+	100641892	bottles_3	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\41\{41CD8AC0-398F-07DB-DBB9-7FBB9FF256ED}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Bottles\bottles_3		78598
+	173734148	bottles_4	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\37\{37CD8C14-4474-342F-84E2-BE9B93E5A975}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Bottles\bottles_4		114050
+	176280475	wave_emitter_loop_1	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\87\{87E91248-0BB0-3AA6-6AFE-95786246ACEF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\WavesEmitter_1\wave_emitter_loop_1		5832854
+	245953259	ship_squeack_8	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\FA\{FAB528A5-E34E-D061-C20C-F0F38501F18C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Woodsqueacks\ship_squeack_8		363660
+	273255614	ship_squeack_13	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\8E\{8E55C587-280E-79FE-2A45-7C303F9DFEA7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Woodsqueacks\ship_squeack_13		486296
+	285493512	ship_squeack_10	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\03\{033BFED2-7CE3-E283-83A2-37597FC4B055}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Woodsqueacks\ship_squeack_10		394600
+	292681309	ship_squeack_4	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\39\{39BC3B5C-573A-32CD-8E84-57994D44509D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Woodsqueacks\ship_squeack_4		285244
+	307430808	ship_squeack_6	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\18\{18D1E228-9AA9-DCB2-F206-ACE054FE7CCC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Woodsqueacks\ship_squeack_6		313756
+	338182446	bottles_6	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\D4\{D4D33000-5B3B-43F2-04D6-773A0EF99FAC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Bottles\bottles_6		117848
+	347357659	ship_squeack_7	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\21\{21835501-92C1-8786-0C95-469C068517D2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Woodsqueacks\ship_squeack_7		303064
+	351161049	ship_squeack_5	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\76\{76FAB01F-14C3-F9CB-BCFD-8B9795AB06C4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Woodsqueacks\ship_squeack_5		281680
+	510228530	bottles_10	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\B3\{B3B6B914-0299-3B84-167B-41E8002057CD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Bottles\bottles_10		78598
+	534969521	ship_squeack_12	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\AE\{AE00575F-4AEF-558C-46A1-74F8C51A958D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Woodsqueacks\ship_squeack_12		478700
+	549785139	bottles_2	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\57\{57A80570-E412-2693-BDDE-DA3D93EB7898}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Bottles\bottles_2		86194
+	619488382	ship_squeack_15	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\E1\{E1FC9FDB-2E17-0C3A-C6C4-5EC03B1B776C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Woodsqueacks\ship_squeack_15		447384
+	663797679	SailsLoop_2	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\72\{72841321-26BB-6DBF-E1CC-9BDFEED30331}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\SailsLoop_2		2141188
+	681537784	ship_squeack_14	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\7A\{7AB454E2-4E5A-06D8-3B5E-601B66D0CDCD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Woodsqueacks\ship_squeack_14		301440
+	685091988	bottles_5	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\07\{0774BE54-056D-F7B9-5D42-D07B1C7A7B4F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Bottles\bottles_5		125444
+	747843737	bottles_7	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\49\{49136B94-7E77-0D89-D7F5-925C2D389E78}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Bottles\bottles_7		81130
+	771722958	Sails	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\46\{461596F7-DFC0-660B-3129-F61655168AB3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Sails		2188896
+	920404243	wave_emitter_loop_2	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\60\{6044F6D9-2ECE-8889-7537-D79248E794A0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\WaveEmitter_2\wave_emitter_loop_2		6299798
+	932526148	WaveLoopsActual	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\CC\{CCB719C9-F070-08E1-474B-C481478751C2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\WaveLoopsActual		18051196
+	960299649	bottles_8	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\86\{867ED684-E124-91D0-4B87-C0701AD76DAD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Bottles\bottles_8		88726
+	991800915	bottles_1	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\54\{54FAE872-BDCC-CB01-7B88-499171D6BEEC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Bottles\bottles_1		79864
+	1000102019	ship_squeack_2	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\E8\{E8B5D59C-DA70-ADB1-D924-D208827C202B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Woodsqueacks\ship_squeack_2		313756
+	1023319846	SailsOneShot	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\69\{6980A812-2603-A744-790D-5AE22D58560A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\SailsMore\SailsOneShot		497760
+	1051285658	ship_squeack_11	D:\UNITY_proj\Thesis_EscapeRoom\Thesis_EscapeRoom\EscapeGame\.cache\52\{52B28D54-9AB0-5144-5348-75F658B2FF28}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceShip\AmbShip\Woodsqueacks\ship_squeack_11		536944
+

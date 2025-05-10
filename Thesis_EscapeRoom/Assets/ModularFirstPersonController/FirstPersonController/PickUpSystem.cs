@@ -335,7 +335,7 @@ public class PickUpSystem : MonoBehaviour
             interactable.isGrabbed = true;
 
             objRigidBody.useGravity = false;
-            objRigidBody.linearDamping = heldObjDrag * Time.timeScale;
+            //objRigidBody.linearDamping = heldObjDrag * Time.timeScale;
 
             // Set parent and reset local position and rotation
             objRigidBody.transform.SetParent(holdParent, true);
@@ -351,7 +351,7 @@ public class PickUpSystem : MonoBehaviour
         heldObj.GetComponent<Interactable>().onDrop.Invoke();
         heldObj.GetComponent<Interactable>().isGrabbed = false;
         heldRigidBody.useGravity = true;
-        heldRigidBody.linearDamping = 1f; // Remove * Time.deltaTime
+        //heldRigidBody.linearDamping = 1f; // Remove * Time.deltaTime
         heldObjectTag = "";
         carrying = false;
         heldObj.transform.parent = null;
@@ -373,7 +373,7 @@ public class PickUpSystem : MonoBehaviour
             interactable.onThrow.Invoke();
         }
         heldRigidbody.useGravity = true;
-        heldRigidbody.linearDamping = 1f;
+        //heldRigidbody.linearDamping = 1f;
         heldObj.transform.parent = null;
         heldObj = null;
         heldRigidbody.AddForce(holdParent.forward * throwForce);

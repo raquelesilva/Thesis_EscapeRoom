@@ -8,8 +8,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.InputSystem;
-using UnityEditor.ShaderGraph;
+using AK.Wwise;
+
 
 
 #if UNITY_EDITOR
@@ -65,9 +65,18 @@ public class FirstPersonController : MonoBehaviour
     public float walkSpeed = 5f;
     public float maxVelocityChange = 10f;
 
+    
+
+
     // Internal Variables
     private bool isWalking = false;
     private Vector2 move;
+
+    //Wwise
+    private bool footstepIsPlaying = false;
+    private float lastFootstepTime = 0;
+    private bool jumpIsPlaying = false;
+    private bool isJumping = false;
 
     #region Sprint
 
@@ -149,6 +158,8 @@ public class FirstPersonController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         crosshairObject = GetComponentInChildren<Image>();
+
+        lastFootstepTime = Time.time;
 
         // Set internal variables
         playerCamera.fieldOfView = fov;
@@ -392,11 +403,30 @@ public class FirstPersonController : MonoBehaviour
             if (targetVelocity.x != 0 || targetVelocity.z != 0)
             {
                 isWalking = true;
+                if (!footstepIsPlaying && !isJumping)
+                {
+                    PlayFootstepEvent();
+                    lastFootstepTime = Time.time;
+                    footstepIsPlaying = true;
+
+                }
+                else
+                {
+                    if (walkSpeed > 1)
+                    {
+                        if (Time.time - lastFootstepTime > 150 / walkSpeed * Time.deltaTime)
+                        {
+                            footstepIsPlaying = false;
+                        }
+                    }
+                    
+                }
             }
             else
             {
                 isWalking = false;
             }
+            
 
             // All movement calculations shile sprint is active
             if (enableSprint && playerMovement.Movement.Sprint.IsPressed() && sprintRemaining > 0f && !isSprintCooldown)
@@ -404,7 +434,7 @@ public class FirstPersonController : MonoBehaviour
                 targetVelocity = transform.TransformDirection(targetVelocity) * sprintSpeed;
 
                 // Apply a force that attempts to reach our target velocity
-                Vector3 velocity = rb.linearVelocity;
+                Vector3 velocity = rb.velocity;
                 Vector3 velocityChange = (targetVelocity - velocity);
                 velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
                 velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);
@@ -442,7 +472,7 @@ public class FirstPersonController : MonoBehaviour
                 targetVelocity = transform.TransformDirection(targetVelocity) * walkSpeed;
 
                 // Apply a force that attempts to reach our target velocity
-                Vector3 velocity = rb.linearVelocity;
+                Vector3 velocity = rb.velocity;
                 Vector3 velocityChange = (targetVelocity - velocity);
                 velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
                 velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);
@@ -455,6 +485,17 @@ public class FirstPersonController : MonoBehaviour
         #endregion
     }
 
+    public void PlayFootstepEvent()
+    {
+        AkSoundEngine.PostEvent("Play_Footsteps", gameObject);
+    }
+
+    public void PlayJumpEvent()
+    {
+        AkSoundEngine.PostEvent("Play_jump", gameObject);
+    }
+
+
     public void SetPause(bool isPaused)
     {
         isGamePaused = isPaused;
@@ -463,6 +504,9 @@ public class FirstPersonController : MonoBehaviour
         enableZoom = !isPaused;
         isWalking = !isPaused;
         enableJump = !isPaused;
+
+        Cursor.lockState = !isPaused ? CursorLockMode.Locked : CursorLockMode.None;
+        Cursor.visible = isPaused;
     }
 
     public bool GetIsGamePaused()
@@ -481,11 +525,25 @@ public class FirstPersonController : MonoBehaviour
         {
             Debug.DrawRay(origin, direction * distance, Color.green);
             isGrounded = true;
-        }
+            if (isJumping)
+            {
+                PlayJumpEvent();
+                
+            }
+            isJumping = false;
+            
+
+         
+         
+
+            }
+            
+        
         else
         {
             Debug.DrawRay(origin, direction * distance, Color.red);
             isGrounded = false;
+            isJumping = true;
         }
     }
 
@@ -497,6 +555,8 @@ public class FirstPersonController : MonoBehaviour
             Debug.Log("IsGrounded");
             rb.AddForce(0f, jumpPower, 0f, ForceMode.Impulse);
             isGrounded = false;
+            isJumping = true;
+
         }
 
         // When crouched and using toggle system, will uncrouch for a jump
@@ -560,8 +620,8 @@ public class FirstPersonController : MonoBehaviour
 
     public void ToggleInteractionPlayer(bool isPlayable)
     {
-        rb.linearVelocity = Vector3.zero;
-        rb.linearDamping = isPlayable ? 0 : 999;
+        rb.velocity = Vector3.zero;
+        //rb.linearDamping = isPlayable ? 0 : 999;
 
         cameraCanMove = isPlayable;
         playerCanMove = isPlayable;
@@ -662,6 +722,15 @@ public class FirstPersonControllerEditor : Editor
         GUI.enabled = fpc.playerCanMove;
         fpc.walkSpeed = EditorGUILayout.Slider(new GUIContent("Walk Speed", "Determines how fast the player will move while walking."), fpc.walkSpeed, .1f, fpc.sprintSpeed);
         GUI.enabled = true;
+
+
+
+    
+
+
+
+
+
 
         EditorGUILayout.Space();
 
