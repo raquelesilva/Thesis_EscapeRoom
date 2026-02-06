@@ -107,6 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d90ba6530d9bfda47abb4610956b2f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGamePaused: 0
   playerCamera: {fileID: 4459864851310106426}
   fov: 60
   invertCamera: 0
@@ -166,9 +167,10 @@ MonoBehaviour:
   interactionDistance: 5
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   interactionParent: {fileID: 4135075748819800531}
   moveDuration: 0.5
+  destroyDuration: 0.5
 --- !u!1 &4459864850190357393
 GameObject:
   m_ObjectHideFlags: 0
