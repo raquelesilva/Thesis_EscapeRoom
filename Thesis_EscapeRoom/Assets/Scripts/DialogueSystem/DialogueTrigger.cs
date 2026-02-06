@@ -1,4 +1,5 @@
 using CoreSystems.Managers;
+using DialogueEditor;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ namespace Unity.FantasyKingdom
         private bool playerInRange;
 
         [SerializeField] List<TriggerEvents> triggerEvents;
+        [SerializeField] NPCConversation npcConversation;
 
         private void Awake()
         {
@@ -30,8 +32,9 @@ namespace Unity.FantasyKingdom
             if (playerInRange && !DialogueManager.GetInstance().dialogueIsActive && Input.GetKeyUp(KeyCode.E) && !FirstPersonController.instance.GetIsGamePaused())
             {
                 Debug.Log("I am in range");
-                DialogueManager.GetInstance().EnterDialogue(inkJS, this);
-            }   
+                //DialogueManager.GetInstance().EnterDialogue(inkJS, this);
+                ConversationManager.Instance.StartConversation(npcConversation);
+            }
         }
 
         public void PlayEvents(string eventName)
