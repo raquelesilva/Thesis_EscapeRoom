@@ -2781,7 +2781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 0}
-  startNodeIndex: -1
+  startIndex: -1
   onDialogueStart:
     m_PersistentCalls:
       m_Calls: []
